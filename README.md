@@ -1,33 +1,16 @@
-# University Employment Fair Scraper
+# university employment fair crawler
 
 Node.js, Cheerio, and RegEx based web-scraping application for finding employment fairs at target universities across the United States for REPSOL S.A. recruiting workflows.
 
-## What it does
+## what it does
 
-- Fetches target university career-center and event pages.
-- Parses HTML with Cheerio.
-- Uses RegEx and keyword scoring to find likely employment fair listings.
-- Prioritizes fairs with engineering, energy, STEM, and employer-facing relevance.
-- Looks for employer-focused tabs and pages on university career sites so results are more useful for REPSOL recruiting.
-- Prints structured results to the terminal and can save them to JSON.
-- Can render the results into a styled HTML/CSS report page.
-
-## Example targets
-
-The default configuration includes examples such as:
-
-- University of Texas at Austin
-- Texas A&M University
-- University of Houston
-- Colorado School of Mines
-- Louisiana State University
-
-You can add or remove universities in `src/config.js`.
-
-## Requirements
-
-- Node.js 18+ recommended
-- npm
+- fetches target university career-center and event pages.
+- parses HTML with Cheerio.
+- uses RegEx and keyword scoring to find likely employment fair listings.
+- prioritizes fairs with engineering, energy, STEM, and employer-facing relevance.
+- looks for employer-focused tabs and pages on university career sites so results are more useful for REPSOL recruiting.
+- prints structured results to the terminal and can save them to JSON.
+- can render the results into a styled HTML/CSS report page.
 
 ## Install
 
@@ -35,39 +18,39 @@ You can add or remove universities in `src/config.js`.
 npm install
 ```
 
-## Run
+## run
 
 ```bash
 npm run scrape
 ```
 
-Save the results to a custom file:
+save the results to a custom file:
 
 ```bash
 node src/index.js --output output/results.json
 ```
 
-Generate an HTML report page:
+generate an HTML report page:
 
 ```bash
 node src/index.js --html output/report.html
 ```
 
-Generate both JSON and HTML:
+generate both JSON and HTML:
 
 ```bash
 node src/index.js --output output/results.json --html output/report.html
 ```
 
-Limit how many matching pages are explored per university:
+limit how many matching pages are explored per university:
 
 ```bash
 node src/index.js --max-pages 8
 ```
 
-## Output shape
+## output shape
 
-Each result contains:
+each result contains:
 
 - `university`
 - `pageTitle`
@@ -79,8 +62,9 @@ Each result contains:
 - `relevanceScore`
 - `matchedKeywords`
 
-## Notes
+## notes
 
-- University websites differ a lot. The scraper uses broad heuristics, so some manual review is still recommended.
-- Many schools host fairs inside Handshake or third-party platforms that may require login. Those pages may not be fully scrapeable with this lightweight approach.
-- This project is intentionally built with plain Node.js, Cheerio, and RegEx so it stays easy to customize.
+- university websites differ a lot. the scraper uses broad heuristics, so some manual review is still recommended.
+- many schools host fairs inside Handshake or third-party platforms that may require login. those pages may not be fully scrapeable with this lightweight approach.
+- this project is intentionally built with plain Node.js, Cheerio, and RegEx so it stays easy to customize.
+  
