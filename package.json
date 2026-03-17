@@ -1,0 +1,23 @@
+{
+  "name": "university-employment-fair-scraper",
+  "version": "1.0.0",
+  "description": "Node.js scraper for finding university employment fairs relevant to REPSOL recruiters.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "scrape": "node src/index.js"
+  },
+  "keywords": [
+    "scraping",
+    "cheerio",
+    "regex",
+    "career-fair",
+    "recruiting"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.1.0"
+  }
+}

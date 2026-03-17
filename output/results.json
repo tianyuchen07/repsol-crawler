@@ -1,0 +1,2945 @@
+{
+  "runAt": "2026-03-17T02:44:39.565Z",
+  "maxPagesPerUniversity": 6,
+  "recruiterFocus": "REPSOL S.A. energy company recruiting",
+  "targets": [
+    {
+      "name": "University of Washington",
+      "shortName": "UW",
+      "tags": [],
+      "seedUrls": [
+        "https://careers.uw.edu/",
+        "https://careers.uw.edu/events/",
+        "https://careers.uw.edu/employers/"
+      ]
+    },
+    {
+      "name": "Gonzaga University",
+      "shortName": "Gonzaga",
+      "tags": [],
+      "seedUrls": [
+        "https://www.gonzaga.edu/student-life/career-professional-development",
+        "https://www.gonzaga.edu/student-life/career-professional-development/events",
+        "https://www.gonzaga.edu/student-life/career-professional-development/employers"
+      ]
+    },
+    {
+      "name": "Seattle University",
+      "shortName": "Seattle U",
+      "tags": [],
+      "seedUrls": [
+        "https://www.seattleu.edu/life-at-seattle-u/career-engagement/",
+        "https://www.seattleu.edu/life-at-seattle-u/career-engagement/events/",
+        "https://www.seattleu.edu/life-at-seattle-u/career-engagement/employers/"
+      ]
+    },
+    {
+      "name": "University of Texas at Austin",
+      "shortName": "UT Austin",
+      "tags": [],
+      "seedUrls": [
+        "https://careerengagement.utexas.edu/",
+        "https://careerengagement.utexas.edu/events/",
+        "https://careerengagement.utexas.edu/employers/"
+      ]
+    },
+    {
+      "name": "Texas A&M University",
+      "shortName": "Texas A&M",
+      "tags": [],
+      "seedUrls": [
+        "https://careercenter.tamu.edu/",
+        "https://careercenter.tamu.edu/events",
+        "https://careercenter.tamu.edu/employers"
+      ]
+    },
+    {
+      "name": "University of Houston",
+      "shortName": "UH",
+      "tags": [],
+      "seedUrls": [
+        "https://www.uh.edu/ucs/",
+        "https://www.uh.edu/ucs/students/career-fairs/",
+        "https://www.uh.edu/ucs/employers/"
+      ]
+    },
+    {
+      "name": "Colorado School of Mines",
+      "shortName": "Mines",
+      "tags": [],
+      "seedUrls": [
+        "https://www.mines.edu/careers/",
+        "https://www.mines.edu/careers/career-fairs/",
+        "https://www.mines.edu/careers/employers/"
+      ]
+    },
+    {
+      "name": "Louisiana State University",
+      "shortName": "LSU",
+      "tags": [],
+      "seedUrls": [
+        "https://www.lsu.edu/careercenter/",
+        "https://www.lsu.edu/careercenter/students/events.php",
+        "https://www.lsu.edu/careercenter/employers/"
+      ]
+    },
+    {
+      "name": "Stanford University",
+      "shortName": "Stanford",
+      "tags": [],
+      "seedUrls": [
+        "https://careereducation.stanford.edu/",
+        "https://careereducation.stanford.edu/events",
+        "https://careereducation.stanford.edu/employers"
+      ]
+    },
+    {
+      "name": "California Institute of Technology",
+      "shortName": "Caltech",
+      "tags": [],
+      "seedUrls": [
+        "https://career.caltech.edu/",
+        "https://career.caltech.edu/channels/events-programs/",
+        "https://career.caltech.edu/employers/"
+      ]
+    },
+    {
+      "name": "University of California, Berkeley",
+      "shortName": "UC Berkeley",
+      "tags": [],
+      "seedUrls": [
+        "https://career.berkeley.edu/",
+        "https://career.berkeley.edu/events/",
+        "https://career.berkeley.edu/employers/"
+      ]
+    },
+    {
+      "name": "University of California, Los Angeles",
+      "shortName": "UCLA",
+      "tags": [],
+      "seedUrls": [
+        "https://career.ucla.edu/",
+        "https://career.ucla.edu/events",
+        "https://career.ucla.edu/employers"
+      ]
+    },
+    {
+      "name": "University of California, San Diego",
+      "shortName": "UC San Diego",
+      "tags": [],
+      "seedUrls": [
+        "https://career.ucsd.edu/",
+        "https://career.ucsd.edu/events-experiences/index.html",
+        "https://career.ucsd.edu/employers/index.html"
+      ]
+    },
+    {
+      "name": "University of California, Davis",
+      "shortName": "UC Davis",
+      "tags": [],
+      "seedUrls": [
+        "https://icc.ucdavis.edu/",
+        "https://icc.ucdavis.edu/events",
+        "https://icc.ucdavis.edu/employers"
+      ]
+    },
+    {
+      "name": "University of California, Irvine",
+      "shortName": "UC Irvine",
+      "tags": [],
+      "seedUrls": [
+        "https://career.uci.edu/",
+        "https://career.uci.edu/events/",
+        "https://career.uci.edu/employers/"
+      ]
+    },
+    {
+      "name": "University of California, Santa Barbara",
+      "shortName": "UC Santa Barbara",
+      "tags": [],
+      "seedUrls": [
+        "https://career.ucsb.edu/",
+        "https://career.ucsb.edu/events",
+        "https://career.ucsb.edu/employers"
+      ]
+    },
+    {
+      "name": "University of California, Santa Cruz",
+      "shortName": "UC Santa Cruz",
+      "tags": [],
+      "seedUrls": [
+        "https://careers.ucsc.edu/",
+        "https://careers.ucsc.edu/student/events/index.html",
+        "https://careers.ucsc.edu/employers/index.html"
+      ]
+    },
+    {
+      "name": "University of California, Riverside",
+      "shortName": "UC Riverside",
+      "tags": [],
+      "seedUrls": [
+        "https://careers.ucr.edu/",
+        "https://careers.ucr.edu/events",
+        "https://careers.ucr.edu/employers"
+      ]
+    },
+    {
+      "name": "University of California, San Francisco",
+      "shortName": "UCSF",
+      "tags": [],
+      "seedUrls": [
+        "https://career.ucsf.edu/",
+        "https://career.ucsf.edu/students/events",
+        "https://career.ucsf.edu/employers"
+      ]
+    },
+    {
+      "name": "Santa Clara University",
+      "shortName": "Santa Clara",
+      "tags": [],
+      "seedUrls": [
+        "https://www.scu.edu/careercenter/",
+        "https://www.scu.edu/careercenter/students/events/",
+        "https://www.scu.edu/careercenter/recruit-at-scu/"
+      ]
+    },
+    {
+      "name": "University of Florida",
+      "shortName": "UF",
+      "tags": [],
+      "seedUrls": [
+        "https://career.ufl.edu/",
+        "https://career.ufl.edu/events/",
+        "https://career.ufl.edu/employers/"
+      ]
+    },
+    {
+      "name": "Florida State University",
+      "shortName": "FSU",
+      "tags": [],
+      "seedUrls": [
+        "https://career.fsu.edu/",
+        "https://career.fsu.edu/events",
+        "https://career.fsu.edu/employers"
+      ]
+    },
+    {
+      "name": "University of South Florida",
+      "shortName": "USF",
+      "tags": [],
+      "seedUrls": [
+        "https://www.usf.edu/career-services/",
+        "https://www.usf.edu/career-services/students/events-career-fairs/index.aspx",
+        "https://www.usf.edu/career-services/employers/index.aspx"
+      ]
+    },
+    {
+      "name": "Florida A&M University",
+      "shortName": "FAMU",
+      "tags": [
+        "HBCU"
+      ],
+      "seedUrls": [
+        "https://www.famu.edu/students/career-and-professional-development-center/index.php",
+        "https://www.famu.edu/students/career-and-professional-development-center/students/career-fairs.php",
+        "https://www.famu.edu/students/career-and-professional-development-center/employers/index.php"
+      ]
+    },
+    {
+      "name": "Arizona State University",
+      "shortName": "ASU",
+      "tags": [],
+      "seedUrls": [
+        "https://career.asu.edu/",
+        "https://career.asu.edu/channels/events/",
+        "https://career.asu.edu/employers/"
+      ]
+    },
+    {
+      "name": "University of Arizona",
+      "shortName": "UArizona",
+      "tags": [],
+      "seedUrls": [
+        "https://career.arizona.edu/",
+        "https://career.arizona.edu/events",
+        "https://career.arizona.edu/employers"
+      ]
+    },
+    {
+      "name": "Brigham Young University",
+      "shortName": "BYU",
+      "tags": [],
+      "seedUrls": [
+        "https://careers.byu.edu/",
+        "https://careers.byu.edu/events",
+        "https://careers.byu.edu/employers"
+      ]
+    },
+    {
+      "name": "University of Utah",
+      "shortName": "U of Utah",
+      "tags": [],
+      "seedUrls": [
+        "https://careers.utah.edu/",
+        "https://careers.utah.edu/events/",
+        "https://careers.utah.edu/employers/"
+      ]
+    },
+    {
+      "name": "Northwestern University",
+      "shortName": "Northwestern",
+      "tags": [],
+      "seedUrls": [
+        "https://www.northwestern.edu/careers/",
+        "https://www.northwestern.edu/careers/about-us/events/index.html",
+        "https://www.northwestern.edu/careers/employers/"
+      ]
+    },
+    {
+      "name": "University of Chicago",
+      "shortName": "UChicago",
+      "tags": [],
+      "seedUrls": [
+        "https://careeradvancement.uchicago.edu/",
+        "https://careeradvancement.uchicago.edu/channels/events/",
+        "https://careeradvancement.uchicago.edu/employers/"
+      ]
+    },
+    {
+      "name": "University of Illinois Urbana-Champaign",
+      "shortName": "UIUC",
+      "tags": [],
+      "seedUrls": [
+        "https://www.careercenter.illinois.edu/",
+        "https://www.careercenter.illinois.edu/events",
+        "https://www.careercenter.illinois.edu/employers"
+      ]
+    },
+    {
+      "name": "University of Illinois Chicago",
+      "shortName": "UIC",
+      "tags": [],
+      "seedUrls": [
+        "https://careerservices.uic.edu/",
+        "https://careerservices.uic.edu/events/",
+        "https://careerservices.uic.edu/employers/"
+      ]
+    },
+    {
+      "name": "Chicago State University",
+      "shortName": "Chicago State",
+      "tags": [
+        "HBCU"
+      ],
+      "seedUrls": [
+        "https://www.csu.edu/careerdevelopment/",
+        "https://www.csu.edu/careerdevelopment/students/events.htm",
+        "https://www.csu.edu/careerdevelopment/employers.htm"
+      ]
+    },
+    {
+      "name": "University of Pennsylvania",
+      "shortName": "UPenn",
+      "tags": [],
+      "seedUrls": [
+        "https://careerservices.upenn.edu/",
+        "https://careerservices.upenn.edu/channels/events/",
+        "https://careerservices.upenn.edu/employers/"
+      ]
+    },
+    {
+      "name": "Carnegie Mellon University",
+      "shortName": "CMU",
+      "tags": [],
+      "seedUrls": [
+        "https://www.cmu.edu/career/",
+        "https://www.cmu.edu/career/fairs-and-events/",
+        "https://www.cmu.edu/career/employers-and-recruiters/"
+      ]
+    },
+    {
+      "name": "Pennsylvania State University",
+      "shortName": "Penn State",
+      "tags": [],
+      "seedUrls": [
+        "https://career.psu.edu/",
+        "https://career.psu.edu/channels/events/",
+        "https://career.psu.edu/employers/"
+      ]
+    },
+    {
+      "name": "Cheyney University of Pennsylvania",
+      "shortName": "Cheyney",
+      "tags": [
+        "HBCU"
+      ],
+      "seedUrls": [
+        "https://www.cheyney.edu/student-life/career-services",
+        "https://www.cheyney.edu/student-life/career-services/career-events",
+        "https://www.cheyney.edu/student-life/career-services/employer-services"
+      ]
+    },
+    {
+      "name": "Lehigh University",
+      "shortName": "Lehigh",
+      "tags": [],
+      "seedUrls": [
+        "https://careercenter.lehigh.edu/",
+        "https://careercenter.lehigh.edu/events",
+        "https://careercenter.lehigh.edu/employers"
+      ]
+    },
+    {
+      "name": "Temple University",
+      "shortName": "Temple",
+      "tags": [],
+      "seedUrls": [
+        "https://careercenter.temple.edu/",
+        "https://careercenter.temple.edu/events",
+        "https://careercenter.temple.edu/employers"
+      ]
+    },
+    {
+      "name": "Drexel University",
+      "shortName": "Drexel",
+      "tags": [],
+      "seedUrls": [
+        "https://drexel.edu/scdc/",
+        "https://drexel.edu/scdc/events/",
+        "https://drexel.edu/scdc/employers/"
+      ]
+    },
+    {
+      "name": "Bryn Mawr College",
+      "shortName": "Bryn Mawr",
+      "tags": [
+        "Seven Sisters"
+      ],
+      "seedUrls": [
+        "https://www.brynmawr.edu/inside/offices-services/career-civic-engagement-center",
+        "https://www.brynmawr.edu/inside/offices-services/career-civic-engagement-center/events",
+        "https://www.brynmawr.edu/inside/offices-services/career-civic-engagement-center/employers"
+      ]
+    },
+    {
+      "name": "Massachusetts Institute of Technology",
+      "shortName": "MIT",
+      "tags": [],
+      "seedUrls": [
+        "https://capd.mit.edu/",
+        "https://capd.mit.edu/channels/career-fairs-events/",
+        "https://capd.mit.edu/employers/"
+      ]
+    },
+    {
+      "name": "Harvard University",
+      "shortName": "Harvard",
+      "tags": [],
+      "seedUrls": [
+        "https://careerservices.fas.harvard.edu/",
+        "https://careerservices.fas.harvard.edu/events/",
+        "https://careerservices.fas.harvard.edu/employers/"
+      ]
+    },
+    {
+      "name": "Boston College",
+      "shortName": "BC",
+      "tags": [],
+      "seedUrls": [
+        "https://www.bc.edu/bc-web/offices/student-affairs/sites/careers.html",
+        "https://www.bc.edu/bc-web/offices/student-affairs/sites/careers/events.html",
+        "https://www.bc.edu/bc-web/offices/student-affairs/sites/careers/employers.html"
+      ]
+    },
+    {
+      "name": "Tufts University",
+      "shortName": "Tufts",
+      "tags": [],
+      "seedUrls": [
+        "https://careers.tufts.edu/",
+        "https://careers.tufts.edu/channels/events-programs/",
+        "https://careers.tufts.edu/employers/"
+      ]
+    },
+    {
+      "name": "Northeastern University",
+      "shortName": "Northeastern",
+      "tags": [],
+      "seedUrls": [
+        "https://careers.northeastern.edu/",
+        "https://careers.northeastern.edu/events/",
+        "https://careers.northeastern.edu/employer-engagement-and-career-design/"
+      ]
+    },
+    {
+      "name": "Wellesley College",
+      "shortName": "Wellesley",
+      "tags": [
+        "Seven Sisters"
+      ],
+      "seedUrls": [
+        "https://www.wellesley.edu/careereducation",
+        "https://www.wellesley.edu/careereducation/events",
+        "https://www.wellesley.edu/careereducation/employers"
+      ]
+    },
+    {
+      "name": "Amherst College",
+      "shortName": "Amherst",
+      "tags": [],
+      "seedUrls": [
+        "https://www.amherst.edu/campuslife/careers",
+        "https://www.amherst.edu/campuslife/careers/events",
+        "https://www.amherst.edu/campuslife/careers/employers"
+      ]
+    },
+    {
+      "name": "Smith College",
+      "shortName": "Smith",
+      "tags": [
+        "Seven Sisters"
+      ],
+      "seedUrls": [
+        "https://www.smith.edu/academics/career-development",
+        "https://www.smith.edu/academics/career-development/events",
+        "https://www.smith.edu/academics/career-development/employers"
+      ]
+    },
+    {
+      "name": "Mount Holyoke College",
+      "shortName": "Mount Holyoke",
+      "tags": [
+        "Seven Sisters"
+      ],
+      "seedUrls": [
+        "https://www.mtholyoke.edu/directory/departments-offices-centers/career-development-center",
+        "https://www.mtholyoke.edu/directory/departments-offices-centers/career-development-center/events",
+        "https://www.mtholyoke.edu/directory/departments-offices-centers/career-development-center/employers"
+      ]
+    },
+    {
+      "name": "University of Wyoming",
+      "shortName": "UWyo",
+      "tags": [],
+      "seedUrls": [
+        "https://www.uwyo.edu/acadaffairs/career-services/",
+        "https://www.uwyo.edu/acadaffairs/career-services/career-fairs/",
+        "https://www.uwyo.edu/acadaffairs/career-services/employers/"
+      ]
+    }
+  ],
+  "universities": [
+    {
+      "university": "University of Washington",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "University of Washington",
+          "pageTitle": "Events – Career & Internship Center | University of Washington",
+          "sourceUrl": "https://careers.uw.edu/events/student/?ctag%5B0%5D=workshops&ctag%5B1%5D=employer-alumni-talks-panels&ctag%5B2%5D=job-internship-fairs&ctag%5B%5D=discussions-meetups",
+          "matchedText": "Event: Career Fair 101: How to Prepare for a Fair. Apr 08 Event: Career Fair 101: How to Prepare for a Fair Wednesday, April 8, 2026 12:30pm - 1:20pm Wed, Apr 8 from 12:30pm - 1:20pm Virtual",
+          "eventName": "Event: Career Fair 101: How to Prepare for a Fair.",
+          "dateSnippet": "Apr 08",
+          "locationSnippet": "Virtual",
+          "relevanceScore": 14,
+          "matchedKeywords": [
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Washington",
+          "pageTitle": "Events – Career & Internship Center | University of Washington",
+          "sourceUrl": "https://careers.uw.edu/events/student/?ctag%5B0%5D=workshops&ctag%5B1%5D=employer-alumni-talks-panels&ctag%5B2%5D=job-internship-fairs&ctag%5B%5D=discussions-meetups#content",
+          "matchedText": "Event: Career Fair 101: How to Prepare for a Fair. Apr 08 Event: Career Fair 101: How to Prepare for a Fair Wednesday, April 8, 2026 12:30pm - 1:20pm Wed, Apr 8 from 12:30pm - 1:20pm Virtual",
+          "eventName": "Event: Career Fair 101: How to Prepare for a Fair.",
+          "dateSnippet": "Apr 08",
+          "locationSnippet": "Virtual",
+          "relevanceScore": 14,
+          "matchedKeywords": [
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Washington",
+          "pageTitle": "Events – Career & Internship Center | University of Washington",
+          "sourceUrl": "https://careers.uw.edu/events/student/?ctag%5B0%5D=workshops&ctag%5B1%5D=employer-alumni-talks-panels&ctag%5B2%5D=job-internship-fairs&ctag%5B%5D=discussions-meetups#main-nav-skipper",
+          "matchedText": "Event: Career Fair 101: How to Prepare for a Fair. Apr 08 Event: Career Fair 101: How to Prepare for a Fair Wednesday, April 8, 2026 12:30pm - 1:20pm Wed, Apr 8 from 12:30pm - 1:20pm Virtual",
+          "eventName": "Event: Career Fair 101: How to Prepare for a Fair.",
+          "dateSnippet": "Apr 08",
+          "locationSnippet": "Virtual",
+          "relevanceScore": 14,
+          "matchedKeywords": [
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Washington",
+          "pageTitle": "Events – Career & Internship Center | University of Washington",
+          "sourceUrl": "https://careers.uw.edu/events/student/?ctag%5B0%5D=workshops&ctag%5B1%5D=employer-alumni-talks-panels&ctag%5B2%5D=job-internship-fairs&ctag%5B%5D=discussions-meetups#!",
+          "matchedText": "Event: Career Fair 101: How to Prepare for a Fair. Apr 08 Event: Career Fair 101: How to Prepare for a Fair Wednesday, April 8, 2026 12:30pm - 1:20pm Wed, Apr 8 from 12:30pm - 1:20pm Virtual",
+          "eventName": "Event: Career Fair 101: How to Prepare for a Fair.",
+          "dateSnippet": "Apr 08",
+          "locationSnippet": "Virtual",
+          "relevanceScore": 14,
+          "matchedKeywords": [
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Washington",
+          "pageTitle": "Events – Career & Internship Center | University of Washington",
+          "sourceUrl": "https://careers.uw.edu/events/student/?ctag%5B0%5D=workshops&ctag%5B1%5D=employer-alumni-talks-panels&ctag%5B2%5D=job-internship-fairs&ctag%5B%5D=discussions-meetups#events-list",
+          "matchedText": "Event: Career Fair 101: How to Prepare for a Fair. Apr 08 Event: Career Fair 101: How to Prepare for a Fair Wednesday, April 8, 2026 12:30pm - 1:20pm Wed, Apr 8 from 12:30pm - 1:20pm Virtual",
+          "eventName": "Event: Career Fair 101: How to Prepare for a Fair.",
+          "dateSnippet": "Apr 08",
+          "locationSnippet": "Virtual",
+          "relevanceScore": 14,
+          "matchedKeywords": [
+            "employer-page"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "university": "Gonzaga University",
+      "visitedPages": 3,
+      "results": [],
+      "errors": [
+        {
+          "university": "Gonzaga University",
+          "sourceUrl": "https://www.gonzaga.edu/student-life/career-professional-development",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "Gonzaga University",
+          "sourceUrl": "https://www.gonzaga.edu/student-life/career-professional-development/events",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "Gonzaga University",
+          "sourceUrl": "https://www.gonzaga.edu/student-life/career-professional-development/employers",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "Seattle University",
+      "visitedPages": 3,
+      "results": [],
+      "errors": [
+        {
+          "university": "Seattle University",
+          "sourceUrl": "https://www.seattleu.edu/life-at-seattle-u/career-engagement/",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "Seattle University",
+          "sourceUrl": "https://www.seattleu.edu/life-at-seattle-u/career-engagement/events/",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "Seattle University",
+          "sourceUrl": "https://www.seattleu.edu/life-at-seattle-u/career-engagement/employers/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "University of Texas at Austin",
+      "visitedPages": 6,
+      "results": [],
+      "errors": []
+    },
+    {
+      "university": "Texas A&M University",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "Texas A&M University",
+          "pageTitle": "Career Fair Tips - Texas A&M Career Center",
+          "sourceUrl": "https://careercenter.tamu.edu/employers/recruiting/career-fair-tips",
+          "matchedText": "Employers. Employers Employers Engage Students Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internships Recruiting Policies Recruiting Unique Populations Salary and Hiring Data Partner With Us Become a Career Center Partner Our Employer Partners Meet the Team",
+          "eventName": "Employers Employers Engage Students Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internships Recruitin...",
+          "dateSnippet": "",
+          "locationSnippet": "Career Center",
+          "relevanceScore": 20,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Texas A&M University",
+          "pageTitle": "Career Fair Tips - Texas A&M Career Center",
+          "sourceUrl": "https://careercenter.tamu.edu/employers/recruiting/career-fair-tips",
+          "matchedText": "Employers Employers Engage Students Recruiting Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internships Recruiting Policies Recruiting Unique Populations Salary and Hiring Data Partner With Us Partner With Us Become a Career Center Partner Our Employer Partners ...",
+          "eventName": "Employers Employers Engage Students Recruiting Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internship...",
+          "dateSnippet": "",
+          "locationSnippet": "Career Center",
+          "relevanceScore": 20,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Texas A&M University",
+          "pageTitle": "Career Fair Tips - Texas A&M Career Center",
+          "sourceUrl": "https://careercenter.tamu.edu/employers/recruiting/career-fair-tips#main",
+          "matchedText": "Employers. Employers Employers Engage Students Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internships Recruiting Policies Recruiting Unique Populations Salary and Hiring Data Partner With Us Become a Career Center Partner Our Employer Partners Meet the Team",
+          "eventName": "Employers Employers Engage Students Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internships Recruitin...",
+          "dateSnippet": "",
+          "locationSnippet": "Career Center",
+          "relevanceScore": 20,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Texas A&M University",
+          "pageTitle": "Career Fair Tips - Texas A&M Career Center",
+          "sourceUrl": "https://careercenter.tamu.edu/employers/recruiting/career-fair-tips#main",
+          "matchedText": "Employers Employers Engage Students Recruiting Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internships Recruiting Policies Recruiting Unique Populations Salary and Hiring Data Partner With Us Partner With Us Become a Career Center Partner Our Employer Partners ...",
+          "eventName": "Employers Employers Engage Students Recruiting Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internship...",
+          "dateSnippet": "",
+          "locationSnippet": "Career Center",
+          "relevanceScore": 20,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Texas A&M University",
+          "pageTitle": "Employer Information - Texas A&M Career Center",
+          "sourceUrl": "https://careercenter.tamu.edu/events/career-fairs/arts-sciences-career-fair/employer-information",
+          "matchedText": "Employers. Employers Employers Engage Students Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internships Recruiting Policies Recruiting Unique Populations Salary and Hiring Data Partner With Us Become a Career Center Partner Our Employer Partners Meet the Team",
+          "eventName": "Employers Employers Engage Students Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internships Recruitin...",
+          "dateSnippet": "",
+          "locationSnippet": "Career Center",
+          "relevanceScore": 20,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Texas A&M University",
+          "pageTitle": "Employer Information - Texas A&M Career Center",
+          "sourceUrl": "https://careercenter.tamu.edu/events/career-fairs/arts-sciences-career-fair/employer-information",
+          "matchedText": "Employers Employers Engage Students Recruiting Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internships Recruiting Policies Recruiting Unique Populations Salary and Hiring Data Partner With Us Partner With Us Become a Career Center Partner Our Employer Partners ...",
+          "eventName": "Employers Employers Engage Students Recruiting Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internship...",
+          "dateSnippet": "",
+          "locationSnippet": "Career Center",
+          "relevanceScore": 20,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Texas A&M University",
+          "pageTitle": "Employer Information - Texas A&M Career Center",
+          "sourceUrl": "https://careercenter.tamu.edu/events/career-fairs/arts-sciences-career-fair/employer-information",
+          "matchedText": "Event Information. Event InformationDate: February 3, 2026 10:00am - 4:00pmLocation: MSC 2300 Bethancourt BallroomThe Arts & Sciences Career Fair allows your organization to:Find engaged and motivated students from over 130 different majorsFill internships and full-time employ...",
+          "eventName": "Event InformationDate: February 3, 2026 10:00am - 4:00pmLocation: MSC 2300 Bethancourt BallroomThe Arts & Sciences Ca...",
+          "dateSnippet": "February 3, 2026",
+          "locationSnippet": "",
+          "relevanceScore": 15,
+          "matchedKeywords": [
+            "internship",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Texas A&M University",
+          "pageTitle": "Arts & Sciences Career Fair - Texas A&M Career Center",
+          "sourceUrl": "https://careercenter.tamu.edu/events/career-fairs/arts-sciences-career-fair",
+          "matchedText": "Welcome to the Spring 2026 Arts & Sciences Career Fair!. Welcome to the Spring 2026 Arts & Sciences Career Fair! February 3 | 10:00 AM - 4:00 PM | @ MSC 2300 EMPLOYER INFORMATION STUDENT INFORMATION",
+          "eventName": "Welcome to the Spring 2026 Arts & Sciences Career Fair!.",
+          "dateSnippet": "February 3",
+          "locationSnippet": "",
+          "relevanceScore": 14,
+          "matchedKeywords": [
+            "employers"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "university": "University of Houston",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "University of Houston",
+          "pageTitle": "UH Career Fairs",
+          "sourceUrl": "https://www.uh.edu/ucs/careerfairs/#employer",
+          "matchedText": "COLLEGE BASED CAREER CENTER AND DEPARTMENT CAREER FAIRS– Spring 2026. COLLEGE BASED CAREER CENTER AND DEPARTMENT CAREER FAIRS– Spring 2026 Career Fair Date Audience Bauer College of Business February 13, 2026 College of Business Majors only Cullen College of Engineering Career...",
+          "eventName": "COLLEGE BASED CAREER CENTER AND DEPARTMENT CAREER FAIRS– Spring 2026 Career Fair Date Audience Bauer College of Busin...",
+          "dateSnippet": "February 13, 2026",
+          "locationSnippet": "CAREER CENTER",
+          "relevanceScore": 16,
+          "matchedKeywords": [
+            "engineering",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Houston",
+          "pageTitle": "UH Career Fairs",
+          "sourceUrl": "https://www.uh.edu/ucs/careerfairs/index.php#employer",
+          "matchedText": "COLLEGE BASED CAREER CENTER AND DEPARTMENT CAREER FAIRS– Spring 2026. COLLEGE BASED CAREER CENTER AND DEPARTMENT CAREER FAIRS– Spring 2026 Career Fair Date Audience Bauer College of Business February 13, 2026 College of Business Majors only Cullen College of Engineering Career...",
+          "eventName": "COLLEGE BASED CAREER CENTER AND DEPARTMENT CAREER FAIRS– Spring 2026 Career Fair Date Audience Bauer College of Busin...",
+          "dateSnippet": "February 13, 2026",
+          "locationSnippet": "CAREER CENTER",
+          "relevanceScore": 16,
+          "matchedKeywords": [
+            "engineering",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Houston",
+          "pageTitle": "UH Career Fairs",
+          "sourceUrl": "https://www.uh.edu/ucs/careerfairs/#employer",
+          "matchedText": "Cullen College of Engineering Career FairEngineering and Technology Career Fair February 11-12, 2026 College of Engineering majors only",
+          "eventName": "Cullen College of Engineering Career FairEngineering and Technology Career Fair February 11-12, 2026 College of Engin...",
+          "dateSnippet": "February 11",
+          "locationSnippet": "",
+          "relevanceScore": 15,
+          "matchedKeywords": [
+            "engineering",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Houston",
+          "pageTitle": "UH Career Fairs",
+          "sourceUrl": "https://www.uh.edu/ucs/careerfairs/index.php#employer",
+          "matchedText": "Cullen College of Engineering Career FairEngineering and Technology Career Fair February 11-12, 2026 College of Engineering majors only",
+          "eventName": "Cullen College of Engineering Career FairEngineering and Technology Career Fair February 11-12, 2026 College of Engin...",
+          "dateSnippet": "February 11",
+          "locationSnippet": "",
+          "relevanceScore": 15,
+          "matchedKeywords": [
+            "engineering",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Houston",
+          "pageTitle": "UH Career Fairs",
+          "sourceUrl": "https://www.uh.edu/ucs/careerfairs/",
+          "matchedText": "COLLEGE BASED CAREER CENTER AND DEPARTMENT CAREER FAIRS– Spring 2026. COLLEGE BASED CAREER CENTER AND DEPARTMENT CAREER FAIRS– Spring 2026 Career Fair Date Audience Bauer College of Business February 13, 2026 College of Business Majors only Cullen College of Engineering Career...",
+          "eventName": "COLLEGE BASED CAREER CENTER AND DEPARTMENT CAREER FAIRS– Spring 2026 Career Fair Date Audience Bauer College of Busin...",
+          "dateSnippet": "February 13, 2026",
+          "locationSnippet": "CAREER CENTER",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "engineering"
+          ]
+        },
+        {
+          "university": "University of Houston",
+          "pageTitle": "UH Career Fairs",
+          "sourceUrl": "https://www.uh.edu/ucs/careerfairs/#employer",
+          "matchedText": "Spring 2026 Career Fairs. Spring 2026 Career Fairs Tues, Jan 13: Alumni Career Mixer Fri, Jan 16: Winter Resource Fair Thur, Feb 19: STEM Career Fair Wed, Feb 25: Architecture + Design Career Fair (and Networking Reception the evening before) Thur, Mar 26: Communication and Ma...",
+          "eventName": "Spring 2026 Career Fairs Tues, Jan 13: Alumni Career Mixer Fri, Jan 16: Winter Resource Fair Thur, Feb 19: STEM Caree...",
+          "dateSnippet": "Jan 13",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Houston",
+          "pageTitle": "UH Career Fairs",
+          "sourceUrl": "https://www.uh.edu/ucs/careerfairs/#employer",
+          "matchedText": "Tues, Jan 13: Alumni Career Mixer Fri, Jan 16: Winter Resource Fair Thur, Feb 19: STEM Career Fair Wed, Feb 25: Architecture + Design Career Fair (and Networking Reception the evening before) Thur, Mar 26: Communication and Marketing Career Mixer Thur, Apr 7: Texas Job Fair Th...",
+          "eventName": "Tues, Jan 13: Alumni Career Mixer Fri, Jan 16: Winter Resource Fair Thur, Feb 19: STEM Career Fair Wed, Feb 25: Archi...",
+          "dateSnippet": "Jan 13",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Houston",
+          "pageTitle": "UH Career Fairs",
+          "sourceUrl": "https://www.uh.edu/ucs/careerfairs/#employer",
+          "matchedText": "Wed, Feb 25: Architecture + Design Career Fair (and Networking Reception the evening before)",
+          "eventName": "Wed, Feb 25: Architecture + Design Career Fair (and Networking Reception the evening before)",
+          "dateSnippet": "Feb 25",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "employer-page"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "university": "Colorado School of Mines",
+      "visitedPages": 6,
+      "results": [],
+      "errors": [
+        {
+          "university": "Colorado School of Mines",
+          "sourceUrl": "https://www.mines.edu/careers/employers/jerry.mason@mines.edu%E2%80%9D",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "Colorado School of Mines",
+          "sourceUrl": "https://www.mines.edu/careers/employers/careercenter@mines.edu%E2%80%9D",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "Colorado School of Mines",
+          "sourceUrl": "https://www.mines.edu/careers/career-fairs/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "Louisiana State University",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "Louisiana State University",
+          "pageTitle": "Recruiting Hub | LSU Olinde Career Center",
+          "sourceUrl": "https://www.lsu.edu/career/employers/recruiting-hub.php#eventinfo",
+          "matchedText": "AI and Tech Career Fair Expand accordion. AI and Tech Career Fair Expand accordion Tech-focused students can connect with employers hiring for full-time roles, internships, and summer opportunities in AI, computing, cybersecurity, data science, and related fields. Event Date: ...",
+          "eventName": "AI and Tech Career Fair Expand accordion.",
+          "dateSnippet": "February 11, 2026",
+          "locationSnippet": "",
+          "relevanceScore": 21,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Louisiana State University",
+          "pageTitle": "Recruiting Hub | LSU Olinde Career Center",
+          "sourceUrl": "https://www.lsu.edu/career/employers/recruiting-hub.php#eventinfo",
+          "matchedText": "Advertising and Communications Networking Event Expand accordion. Advertising and Communications Networking Event Expand accordion Students in advertising, communications, marketing, public relations, broadcast media and related fields can connect with employers recruiting for...",
+          "eventName": "Advertising and Communications Networking Event Expand accordion.",
+          "dateSnippet": "March 24, 2026",
+          "locationSnippet": "",
+          "relevanceScore": 21,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Louisiana State University",
+          "pageTitle": "Recruiting Hub | LSU Olinde Career Center",
+          "sourceUrl": "https://www.lsu.edu/career/employers/recruiting-hub.php#eventinfo",
+          "matchedText": "Opportunity Knocks Career Fair Expand accordion. Opportunity Knocks Career Fair Expand accordion Students from all majors are invited to connect with employers recruiting for part-time, full-time, and internship opportunities. This event offers a broad platform to network, exp...",
+          "eventName": "Opportunity Knocks Career Fair Expand accordion.",
+          "dateSnippet": "March 31, 2026",
+          "locationSnippet": "",
+          "relevanceScore": 21,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Louisiana State University",
+          "pageTitle": "Recruiting Hub | LSU Olinde Career Center",
+          "sourceUrl": "https://www.lsu.edu/career/employers/recruiting-hub.php",
+          "matchedText": "AI and Tech Career Fair Expand accordion. AI and Tech Career Fair Expand accordion Tech-focused students can connect with employers hiring for full-time roles, internships, and summer opportunities in AI, computing, cybersecurity, data science, and related fields. Event Date: ...",
+          "eventName": "AI and Tech Career Fair Expand accordion.",
+          "dateSnippet": "February 11, 2026",
+          "locationSnippet": "",
+          "relevanceScore": 19,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Louisiana State University",
+          "pageTitle": "Recruiting Hub | LSU Olinde Career Center",
+          "sourceUrl": "https://www.lsu.edu/career/employers/recruiting-hub.php",
+          "matchedText": "Advertising and Communications Networking Event Expand accordion. Advertising and Communications Networking Event Expand accordion Students in advertising, communications, marketing, public relations, broadcast media and related fields can connect with employers recruiting for...",
+          "eventName": "Advertising and Communications Networking Event Expand accordion.",
+          "dateSnippet": "March 24, 2026",
+          "locationSnippet": "",
+          "relevanceScore": 19,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Louisiana State University",
+          "pageTitle": "Recruiting Hub | LSU Olinde Career Center",
+          "sourceUrl": "https://www.lsu.edu/career/employers/recruiting-hub.php",
+          "matchedText": "Opportunity Knocks Career Fair Expand accordion. Opportunity Knocks Career Fair Expand accordion Students from all majors are invited to connect with employers recruiting for part-time, full-time, and internship opportunities. This event offers a broad platform to network, exp...",
+          "eventName": "Opportunity Knocks Career Fair Expand accordion.",
+          "dateSnippet": "March 31, 2026",
+          "locationSnippet": "",
+          "relevanceScore": 19,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Louisiana State University",
+          "pageTitle": "Recruiting Hub | LSU Olinde Career Center",
+          "sourceUrl": "https://www.lsu.edu/career/employers/recruiting-hub.php#eventinfo",
+          "matchedText": "Career Expo Expand accordion. Career Expo Expand accordion Career Expo is our largest recruiting event of the year, connecting nearly 2,000 students and alumni of all majors with over 200 employers from across the country to form valuable career connections through a day of ne...",
+          "eventName": "Career Expo Expand accordion.",
+          "dateSnippet": "February 3, 2026",
+          "locationSnippet": "",
+          "relevanceScore": 19,
+          "matchedKeywords": [
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Louisiana State University",
+          "pageTitle": "Recruiting Hub | LSU Olinde Career Center",
+          "sourceUrl": "https://www.lsu.edu/career/employers/recruiting-hub.php",
+          "matchedText": "Career Expo Expand accordion. Career Expo Expand accordion Career Expo is our largest recruiting event of the year, connecting nearly 2,000 students and alumni of all majors with over 200 employers from across the country to form valuable career connections through a day of ne...",
+          "eventName": "Career Expo Expand accordion.",
+          "dateSnippet": "February 3, 2026",
+          "locationSnippet": "",
+          "relevanceScore": 17,
+          "matchedKeywords": [
+            "employers",
+            "employer-page"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "university": "Stanford University",
+      "visitedPages": 3,
+      "results": [],
+      "errors": [
+        {
+          "university": "Stanford University",
+          "sourceUrl": "https://careereducation.stanford.edu/",
+          "error": "fetch failed"
+        },
+        {
+          "university": "Stanford University",
+          "sourceUrl": "https://careereducation.stanford.edu/events",
+          "error": "fetch failed"
+        },
+        {
+          "university": "Stanford University",
+          "sourceUrl": "https://careereducation.stanford.edu/employers",
+          "error": "fetch failed"
+        }
+      ]
+    },
+    {
+      "university": "California Institute of Technology",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "California Institute of Technology",
+          "pageTitle": "Career Fairs for Employers - CALE at Caltech",
+          "sourceUrl": "https://career.caltech.edu/employers/career-fairs-for-employers",
+          "matchedText": "Employers are encouraged to post jobs and internships in advance of the career fair. Since both schools use different recruiting platforms, we appreciate your efforts to post them on both systems!",
+          "eventName": "Employers are encouraged to post jobs and internships in advance of the career fair.",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 19,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "California Institute of Technology",
+          "pageTitle": "Career Fairs for Employers - CALE at Caltech",
+          "sourceUrl": "https://career.caltech.edu/employers/career-fairs-for-employers#content",
+          "matchedText": "Employers are encouraged to post jobs and internships in advance of the career fair. Since both schools use different recruiting platforms, we appreciate your efforts to post them on both systems!",
+          "eventName": "Employers are encouraged to post jobs and internships in advance of the career fair.",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 19,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "university": "University of California, Berkeley",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "University of California, Berkeley",
+          "pageTitle": "Past Fair Directories - Career Engagement",
+          "sourceUrl": "https://career.berkeley.edu/employers/recruit-at-cal/recruitment-events-and-career-fairs/past-fair-directories/",
+          "matchedText": "Engineering, Technology, & Data Career & Internship Fair",
+          "eventName": "Engineering, Technology, & Data Career & Internship Fair",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 15,
+          "matchedKeywords": [
+            "engineering",
+            "internship",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of California, Berkeley",
+          "pageTitle": "Past Fair Directories - Career Engagement",
+          "sourceUrl": "https://career.berkeley.edu/employers/recruit-at-cal/recruitment-events-and-career-fairs/past-fair-directories/",
+          "matchedText": "Civil & Environmental Engineering (CEE) Career Fair",
+          "eventName": "Civil & Environmental Engineering (CEE) Career Fair",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "engineering",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of California, Berkeley",
+          "pageTitle": "Past Fair Directories - Career Engagement",
+          "sourceUrl": "https://career.berkeley.edu/employers/recruit-at-cal/recruitment-events-and-career-fairs/past-fair-directories/",
+          "matchedText": "Fall Civil & Environmental Engineering (CEE) Career Fair",
+          "eventName": "Fall Civil & Environmental Engineering (CEE) Career Fair",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "engineering",
+            "employer-page"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "university": "University of California, Los Angeles",
+      "visitedPages": 6,
+      "results": [],
+      "errors": [
+        {
+          "university": "University of California, Los Angeles",
+          "sourceUrl": "https://career.ucla.edu/employers",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "University of California, San Diego",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "University of California, San Diego",
+          "pageTitle": "2026 Spring In-Person Career Fair",
+          "sourceUrl": "https://career.ucsd.edu/employers-recruiters/career-fairs/2025-fall-in-person.html",
+          "matchedText": "Thursday, April 9, 2026 | 12 p.m. – 4 p.m. | Price Center West Ballroom | Spring 2026 Career Fair",
+          "eventName": "Price Center West Ballroom Spring 2026 Career Fair",
+          "dateSnippet": "April 9, 2026",
+          "locationSnippet": "Ballroom",
+          "relevanceScore": 14,
+          "matchedKeywords": [
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of California, San Diego",
+          "pageTitle": "2026 Spring In-Person Career Fair",
+          "sourceUrl": "https://career.ucsd.edu/employers-recruiters/career-fairs/2025-fall-in-person.html#",
+          "matchedText": "Thursday, April 9, 2026 | 12 p.m. – 4 p.m. | Price Center West Ballroom | Spring 2026 Career Fair",
+          "eventName": "Price Center West Ballroom Spring 2026 Career Fair",
+          "dateSnippet": "April 9, 2026",
+          "locationSnippet": "Ballroom",
+          "relevanceScore": 14,
+          "matchedKeywords": [
+            "employer-page"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "university": "University of California, Davis",
+      "visitedPages": 3,
+      "results": [],
+      "errors": [
+        {
+          "university": "University of California, Davis",
+          "sourceUrl": "https://icc.ucdavis.edu/",
+          "error": "HTTP 403"
+        },
+        {
+          "university": "University of California, Davis",
+          "sourceUrl": "https://icc.ucdavis.edu/events",
+          "error": "HTTP 403"
+        },
+        {
+          "university": "University of California, Davis",
+          "sourceUrl": "https://icc.ucdavis.edu/employers",
+          "error": "HTTP 403"
+        }
+      ]
+    },
+    {
+      "university": "University of California, Irvine",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "University of California, Irvine",
+          "pageTitle": "Career Fairs - UC Irvine Division of Career Pathways",
+          "sourceUrl": "https://career.uci.edu/recruiters/on-campus-recruiting/career-fairs/%20",
+          "matchedText": "Spring Health Sciences Graduate School Expo Registration full Week 4 – Tuesday, April 21st 11:00 AM – 2:00 PM Outdoors on Ring Road",
+          "eventName": "Spring Health Sciences Graduate School Expo Registration full Week 4 – Tuesday, April 21st 11:00 AM – 2:00 PM Outdoor...",
+          "dateSnippet": "April 21",
+          "locationSnippet": "",
+          "relevanceScore": 12,
+          "matchedKeywords": [
+            "graduate"
+          ]
+        },
+        {
+          "university": "University of California, Irvine",
+          "pageTitle": "Career Fairs - UC Irvine Division of Career Pathways",
+          "sourceUrl": "https://career.uci.edu/recruiters/on-campus-recruiting/career-fairs/",
+          "matchedText": "Spring Health Sciences Graduate School Expo Registration full Week 4 – Tuesday, April 21st 11:00 AM – 2:00 PM Outdoors on Ring Road",
+          "eventName": "Spring Health Sciences Graduate School Expo Registration full Week 4 – Tuesday, April 21st 11:00 AM – 2:00 PM Outdoor...",
+          "dateSnippet": "April 21",
+          "locationSnippet": "",
+          "relevanceScore": 12,
+          "matchedKeywords": [
+            "graduate"
+          ]
+        },
+        {
+          "university": "University of California, Irvine",
+          "pageTitle": "Career Fairs - UC Irvine Division of Career Pathways",
+          "sourceUrl": "https://career.uci.edu/undergraduate/find-a-job/career-fairs/",
+          "matchedText": "Fall Career & Internship Fair (Featuring EngiTECH) Week 2 – Thursday, Oct 9th I 10am-2pm I Indoors in the UCI Student Center Register Here to Attend",
+          "eventName": "Fall Career & Internship Fair (Featuring EngiTECH) Week 2 – Thursday, Oct 9th I 10am-2pm I Indoors in the UCI Student...",
+          "dateSnippet": "Oct 9",
+          "locationSnippet": "",
+          "relevanceScore": 12,
+          "matchedKeywords": [
+            "internship"
+          ]
+        },
+        {
+          "university": "University of California, Irvine",
+          "pageTitle": "Career Fairs - UC Irvine Division of Career Pathways",
+          "sourceUrl": "https://career.uci.edu/undergraduate/find-a-job/career-fairs/",
+          "matchedText": "Fall Graduate School Expo Week 6 – Thursday, Nov 6th I 10am-2pm I Outdoors on Ring Road Register Here to Attend",
+          "eventName": "Fall Graduate School Expo Week 6 – Thursday, Nov 6th I 10am-2pm I Outdoors on Ring Road Register Here to Attend",
+          "dateSnippet": "Nov 6",
+          "locationSnippet": "",
+          "relevanceScore": 12,
+          "matchedKeywords": [
+            "graduate"
+          ]
+        },
+        {
+          "university": "University of California, Irvine",
+          "pageTitle": "Career Fairs - UC Irvine Division of Career Pathways",
+          "sourceUrl": "https://career.uci.edu/undergraduate/find-a-job/career-fairs/",
+          "matchedText": "Winter Career & Internship Fair Week 4 – Wednesday, Jan 28th I 10am-2pm I Indoors in the UCI Student Center Register Here to Attend",
+          "eventName": "Winter Career & Internship Fair Week 4 – Wednesday, Jan 28th I 10am-2pm I Indoors in the UCI Student Center Register ...",
+          "dateSnippet": "Jan 28",
+          "locationSnippet": "",
+          "relevanceScore": 12,
+          "matchedKeywords": [
+            "internship"
+          ]
+        },
+        {
+          "university": "University of California, Irvine",
+          "pageTitle": "Career Fairs - UC Irvine Division of Career Pathways",
+          "sourceUrl": "https://career.uci.edu/undergraduate/find-a-job/career-fairs/",
+          "matchedText": "Spring Career & Internship Fair Week 2 – Thursday, April 9th I 10am-2pm I Indoors in the UCI Student Center Register Here to Attend",
+          "eventName": "Spring Career & Internship Fair Week 2 – Thursday, April 9th I 10am-2pm I Indoors in the UCI Student Center Register ...",
+          "dateSnippet": "April 9",
+          "locationSnippet": "",
+          "relevanceScore": 12,
+          "matchedKeywords": [
+            "internship"
+          ]
+        },
+        {
+          "university": "University of California, Irvine",
+          "pageTitle": "Career Fairs - UC Irvine Division of Career Pathways",
+          "sourceUrl": "https://career.uci.edu/undergraduate/find-a-job/career-fairs/",
+          "matchedText": "Spring Health Sciences Graduate School Expo Week 4 – Tuesday, April 21st I 11am-2pm I Outdoors on Ring Road Register Here to Attend",
+          "eventName": "Spring Health Sciences Graduate School Expo Week 4 – Tuesday, April 21st I 11am-2pm I Outdoors on Ring Road Register ...",
+          "dateSnippet": "April 21",
+          "locationSnippet": "",
+          "relevanceScore": 12,
+          "matchedKeywords": [
+            "graduate"
+          ]
+        },
+        {
+          "university": "University of California, Irvine",
+          "pageTitle": "Career Fairs - UC Irvine Division of Career Pathways",
+          "sourceUrl": "https://career.uci.edu/recruiters/on-campus-recruiting/career-fairs/%20",
+          "matchedText": "Spring Career Fair Registration deadline: March 13, 2026 Week 2 – Thursday, April 9th 10:00 AM – 2:00 PM Indoors in the UCI Student Center",
+          "eventName": "Spring Career Fair Registration deadline: March 13, 2026 Week 2 – Thursday, April 9th 10:00 AM – 2:00 PM Indoors in t...",
+          "dateSnippet": "March 13, 2026",
+          "locationSnippet": "",
+          "relevanceScore": 10,
+          "matchedKeywords": []
+        }
+      ],
+      "errors": [
+        {
+          "university": "University of California, Irvine",
+          "sourceUrl": "https://career.uci.edu/employers/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "University of California, Santa Barbara",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "University of California, Santa Barbara",
+          "pageTitle": "Recruit UCSB Students | UC Santa Barbara Career Services",
+          "sourceUrl": "https://career.ucsb.edu/employers",
+          "matchedText": "Fall Job + Internship Fair: Wednesday, October 22nd, 2025",
+          "eventName": "Fall Job + Internship Fair: Wednesday, October 22nd, 2025",
+          "dateSnippet": "October 22",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "internship",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of California, Santa Barbara",
+          "pageTitle": "Recruit UCSB Students | UC Santa Barbara Career Services",
+          "sourceUrl": "https://career.ucsb.edu/employers",
+          "matchedText": "Spring Job + Internship Fair: Tuesday, April 28th, 2026",
+          "eventName": "Spring Job + Internship Fair: Tuesday, April 28th, 2026",
+          "dateSnippet": "April 28",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "internship",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of California, Santa Barbara",
+          "pageTitle": "Recruit UCSB Students | UC Santa Barbara Career Services",
+          "sourceUrl": "https://career.ucsb.edu/employers#main-content",
+          "matchedText": "Fall Job + Internship Fair: Wednesday, October 22nd, 2025",
+          "eventName": "Fall Job + Internship Fair: Wednesday, October 22nd, 2025",
+          "dateSnippet": "October 22",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "internship",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of California, Santa Barbara",
+          "pageTitle": "Recruit UCSB Students | UC Santa Barbara Career Services",
+          "sourceUrl": "https://career.ucsb.edu/employers#main-content",
+          "matchedText": "Spring Job + Internship Fair: Tuesday, April 28th, 2026",
+          "eventName": "Spring Job + Internship Fair: Tuesday, April 28th, 2026",
+          "dateSnippet": "April 28",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "internship",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of California, Santa Barbara",
+          "pageTitle": "Recruit UCSB Students | UC Santa Barbara Career Services",
+          "sourceUrl": "https://career.ucsb.edu/employers#",
+          "matchedText": "Fall Job + Internship Fair: Wednesday, October 22nd, 2025",
+          "eventName": "Fall Job + Internship Fair: Wednesday, October 22nd, 2025",
+          "dateSnippet": "October 22",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "internship",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of California, Santa Barbara",
+          "pageTitle": "Recruit UCSB Students | UC Santa Barbara Career Services",
+          "sourceUrl": "https://career.ucsb.edu/employers#",
+          "matchedText": "Spring Job + Internship Fair: Tuesday, April 28th, 2026",
+          "eventName": "Spring Job + Internship Fair: Tuesday, April 28th, 2026",
+          "dateSnippet": "April 28",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "internship",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of California, Santa Barbara",
+          "pageTitle": "Recruit UCSB Students | UC Santa Barbara Career Services",
+          "sourceUrl": "https://career.ucsb.edu/employers#collapse-7783",
+          "matchedText": "Fall Job + Internship Fair: Wednesday, October 22nd, 2025",
+          "eventName": "Fall Job + Internship Fair: Wednesday, October 22nd, 2025",
+          "dateSnippet": "October 22",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "internship",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of California, Santa Barbara",
+          "pageTitle": "Recruit UCSB Students | UC Santa Barbara Career Services",
+          "sourceUrl": "https://career.ucsb.edu/employers#collapse-7783",
+          "matchedText": "Spring Job + Internship Fair: Tuesday, April 28th, 2026",
+          "eventName": "Spring Job + Internship Fair: Tuesday, April 28th, 2026",
+          "dateSnippet": "April 28",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "internship",
+            "employer-page"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "university": "University of California, Santa Cruz",
+      "visitedPages": 6,
+      "results": [],
+      "errors": [
+        {
+          "university": "University of California, Santa Cruz",
+          "sourceUrl": "https://careers.ucsc.edu/employers/index.html",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "University of California, Santa Cruz",
+          "sourceUrl": "https://careers.ucsc.edu/student/events/index.html",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "University of California, Riverside",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "University of California, Riverside",
+          "pageTitle": "Career Fairs | Career Center",
+          "sourceUrl": "https://careers.ucr.edu/employers/career-fairs",
+          "matchedText": "Spring & Internship Career Fair. Spring Career Fair Dates/Teams/Location Spring & Internship Career Fair April 1st, 2026 | 11AM-3PM | HUB 302 Health Professions Information Day April 15th, 2026 | 11AM - 2PM | Rivera Walkway Just In Time Fair [Hybrid] In-Person: May 6th, 2026 |...",
+          "eventName": "Spring & Internship Career Fair.",
+          "dateSnippet": "April 1",
+          "locationSnippet": "Career Center",
+          "relevanceScore": 16,
+          "matchedKeywords": [
+            "internship",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of California, Riverside",
+          "pageTitle": "Career Fairs | Career Center",
+          "sourceUrl": "https://careers.ucr.edu/employers/career-fairs#spring-career-fair-datesteamsl",
+          "matchedText": "Spring & Internship Career Fair. Spring Career Fair Dates/Teams/Location Spring & Internship Career Fair April 1st, 2026 | 11AM-3PM | HUB 302 Health Professions Information Day April 15th, 2026 | 11AM - 2PM | Rivera Walkway Just In Time Fair [Hybrid] In-Person: May 6th, 2026 |...",
+          "eventName": "Spring & Internship Career Fair.",
+          "dateSnippet": "April 1",
+          "locationSnippet": "Career Center",
+          "relevanceScore": 16,
+          "matchedKeywords": [
+            "internship",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of California, Riverside",
+          "pageTitle": "Career Fairs | Career Center",
+          "sourceUrl": "https://careers.ucr.edu/employers/career-fairs",
+          "matchedText": "Engineering & Technology Career Fair. Winter Quarter Fair Dates/Times/Location Engineering & Technology Career Fair January 28th, 2026 | 11AM-3PM | HUB 302 Education, Government, & Non-Profit Career Fair February 20, 2026 | 2:30PM - 5:30PM | HUB 302",
+          "eventName": "Engineering & Technology Career Fair.",
+          "dateSnippet": "January 28",
+          "locationSnippet": "",
+          "relevanceScore": 15,
+          "matchedKeywords": [
+            "engineering",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of California, Riverside",
+          "pageTitle": "Career Fairs | Career Center",
+          "sourceUrl": "https://careers.ucr.edu/employers/career-fairs#spring-career-fair-datesteamsl",
+          "matchedText": "Engineering & Technology Career Fair. Winter Quarter Fair Dates/Times/Location Engineering & Technology Career Fair January 28th, 2026 | 11AM-3PM | HUB 302 Education, Government, & Non-Profit Career Fair February 20, 2026 | 2:30PM - 5:30PM | HUB 302",
+          "eventName": "Engineering & Technology Career Fair.",
+          "dateSnippet": "January 28",
+          "locationSnippet": "",
+          "relevanceScore": 15,
+          "matchedKeywords": [
+            "engineering",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of California, Riverside",
+          "pageTitle": "Career Fairs | Career Center",
+          "sourceUrl": "https://careers.ucr.edu/employers/career-fairs",
+          "matchedText": "Secure your company's future by connecting directly with the brightest minds in engineering and technology at the UC Riverside (UCR) Engineering & Technology Career Expo. Increase your company's presence and visibility among a key demographic of future innovators and leaders.",
+          "eventName": "Secure your company's future by connecting directly with the brightest minds in engineering and technology at the UC ...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "engineering",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of California, Riverside",
+          "pageTitle": "Career Fairs | Career Center",
+          "sourceUrl": "https://careers.ucr.edu/employers/career-fairs#spring-career-fair-datesteamsl",
+          "matchedText": "Secure your company's future by connecting directly with the brightest minds in engineering and technology at the UC Riverside (UCR) Engineering & Technology Career Expo. Increase your company's presence and visibility among a key demographic of future innovators and leaders.",
+          "eventName": "Secure your company's future by connecting directly with the brightest minds in engineering and technology at the UC ...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "engineering",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of California, Riverside",
+          "pageTitle": "Career Fairs | Career Center",
+          "sourceUrl": "https://careers.ucr.edu/events/career-fairs",
+          "matchedText": "Spring & Internship Career Fair. Spring Career Fair Dates/Teams/Location Spring & Internship Career Fair April 1st, 2026 | 11AM-3PM | HUB 302 Health Professions Information Day April 15th, 2026 | 11AM - 2PM | Rivera Walkway Just In Time Fair [Hybrid] In-Person: May 6th, 2026 |...",
+          "eventName": "Spring & Internship Career Fair.",
+          "dateSnippet": "April 1",
+          "locationSnippet": "Career Center",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "internship"
+          ]
+        },
+        {
+          "university": "University of California, Riverside",
+          "pageTitle": "Career Fairs | Career Center",
+          "sourceUrl": "https://careers.ucr.edu/events/career-fairs#spring-career-fair-datesteamsl",
+          "matchedText": "Spring & Internship Career Fair. Spring Career Fair Dates/Teams/Location Spring & Internship Career Fair April 1st, 2026 | 11AM-3PM | HUB 302 Health Professions Information Day April 15th, 2026 | 11AM - 2PM | Rivera Walkway Just In Time Fair [Hybrid] In-Person: May 6th, 2026 |...",
+          "eventName": "Spring & Internship Career Fair.",
+          "dateSnippet": "April 1",
+          "locationSnippet": "Career Center",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "internship"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "university": "University of California, San Francisco",
+      "visitedPages": 6,
+      "results": [],
+      "errors": []
+    },
+    {
+      "university": "Santa Clara University",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "Santa Clara University",
+          "pageTitle": "Career Fairs - Career Center - Santa Clara University",
+          "sourceUrl": "https://www.scu.edu/careercenter/employers/careerfairs/",
+          "matchedText": "02/03/2026 - Winter Internship Fair - All Majors3-6 pm | In-Person On Campus",
+          "eventName": "02/03/2026 - Winter Internship Fair - All Majors3-6 pm In-Person On Campus",
+          "dateSnippet": "02/03/2026",
+          "locationSnippet": "",
+          "relevanceScore": 15,
+          "matchedKeywords": [
+            "internship",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Santa Clara University",
+          "pageTitle": "Career Fairs - Career Center - Santa Clara University",
+          "sourceUrl": "https://www.scu.edu/careercenter/employers/careerfairs/#content",
+          "matchedText": "02/03/2026 - Winter Internship Fair - All Majors3-6 pm | In-Person On Campus",
+          "eventName": "02/03/2026 - Winter Internship Fair - All Majors3-6 pm In-Person On Campus",
+          "dateSnippet": "02/03/2026",
+          "locationSnippet": "",
+          "relevanceScore": 15,
+          "matchedKeywords": [
+            "internship",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Santa Clara University",
+          "pageTitle": "Career Fairs - Career Center - Santa Clara University",
+          "sourceUrl": "https://www.scu.edu/careercenter/employers/careerfairs/#",
+          "matchedText": "02/03/2026 - Winter Internship Fair - All Majors3-6 pm | In-Person On Campus",
+          "eventName": "02/03/2026 - Winter Internship Fair - All Majors3-6 pm In-Person On Campus",
+          "dateSnippet": "02/03/2026",
+          "locationSnippet": "",
+          "relevanceScore": 15,
+          "matchedKeywords": [
+            "internship",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Santa Clara University",
+          "pageTitle": "Career Fairs - Career Center - Santa Clara University",
+          "sourceUrl": "https://www.scu.edu/careercenter/employers/careerfairs/",
+          "matchedText": "04/09/2026 - Spring Career Fair - All Majors3-6 pm | In-Person On Campus",
+          "eventName": "04/09/2026 - Spring Career Fair - All Majors3-6 pm In-Person On Campus",
+          "dateSnippet": "04/09/2026",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Santa Clara University",
+          "pageTitle": "Career Fairs - Career Center - Santa Clara University",
+          "sourceUrl": "https://www.scu.edu/careercenter/employers/careerfairs/#content",
+          "matchedText": "04/09/2026 - Spring Career Fair - All Majors3-6 pm | In-Person On Campus",
+          "eventName": "04/09/2026 - Spring Career Fair - All Majors3-6 pm In-Person On Campus",
+          "dateSnippet": "04/09/2026",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Santa Clara University",
+          "pageTitle": "Career Fairs - Career Center - Santa Clara University",
+          "sourceUrl": "https://www.scu.edu/careercenter/employers/careerfairs/#",
+          "matchedText": "04/09/2026 - Spring Career Fair - All Majors3-6 pm | In-Person On Campus",
+          "eventName": "04/09/2026 - Spring Career Fair - All Majors3-6 pm In-Person On Campus",
+          "dateSnippet": "04/09/2026",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "employer-page"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "university": "University of Florida",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "University of Florida",
+          "pageTitle": "Career Fairs - Career Connections Center",
+          "sourceUrl": "https://career.ufl.edu/events-and-programs/career-fairs/",
+          "matchedText": "Agricultural & Biological Engineering Fair",
+          "eventName": "Agricultural & Biological Engineering Fair",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 10,
+          "matchedKeywords": [
+            "engineering"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "university": "Florida State University",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "Florida State University",
+          "pageTitle": "Attend a Job Fair or Event | Career Center",
+          "sourceUrl": "https://career.fsu.edu/employers/attend-a-career-fair",
+          "matchedText": "Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Series More Job Fairs and Events Job Fair Standards and Guidelines Questions Build Your Brand Partner with the Career Center Plan Your Travel On-Campus Recruiting In...",
+          "eventName": "Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Serie...",
+          "dateSnippet": "",
+          "locationSnippet": "Career Center",
+          "relevanceScore": 20,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Florida State University",
+          "pageTitle": "Attend a Job Fair or Event | Career Center",
+          "sourceUrl": "https://career.fsu.edu/employers/attend-a-career-fair#seminole-futures",
+          "matchedText": "Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Series More Job Fairs and Events Job Fair Standards and Guidelines Questions Build Your Brand Partner with the Career Center Plan Your Travel On-Campus Recruiting In...",
+          "eventName": "Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Serie...",
+          "dateSnippet": "",
+          "locationSnippet": "Career Center",
+          "relevanceScore": 20,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Florida State University",
+          "pageTitle": "Attend a Job Fair or Event | Career Center",
+          "sourceUrl": "https://career.fsu.edu/employers/attend-a-career-fair#more-job",
+          "matchedText": "Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Series More Job Fairs and Events Job Fair Standards and Guidelines Questions Build Your Brand Partner with the Career Center Plan Your Travel On-Campus Recruiting In...",
+          "eventName": "Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Serie...",
+          "dateSnippet": "",
+          "locationSnippet": "Career Center",
+          "relevanceScore": 20,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Florida State University",
+          "pageTitle": "Attend a Job Fair or Event | Career Center",
+          "sourceUrl": "https://career.fsu.edu/employers/attend-a-career-fair#content",
+          "matchedText": "Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Series More Job Fairs and Events Job Fair Standards and Guidelines Questions Build Your Brand Partner with the Career Center Plan Your Travel On-Campus Recruiting In...",
+          "eventName": "Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Serie...",
+          "dateSnippet": "",
+          "locationSnippet": "Career Center",
+          "relevanceScore": 20,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Florida State University",
+          "pageTitle": "Attend a Job Fair or Event | Career Center",
+          "sourceUrl": "https://career.fsu.edu/employers/attend-a-career-fair#fsu-search",
+          "matchedText": "Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Series More Job Fairs and Events Job Fair Standards and Guidelines Questions Build Your Brand Partner with the Career Center Plan Your Travel On-Campus Recruiting In...",
+          "eventName": "Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Serie...",
+          "dateSnippet": "",
+          "locationSnippet": "Career Center",
+          "relevanceScore": 20,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "university": "University of South Florida",
+      "visitedPages": 5,
+      "results": [],
+      "errors": [
+        {
+          "university": "University of South Florida",
+          "sourceUrl": "https://www.usf.edu/career-services/employers/index.aspx",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "University of South Florida",
+          "sourceUrl": "https://www.usf.edu/career-services/students/events-career-fairs/index.aspx",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "Florida A&M University",
+      "visitedPages": 3,
+      "results": [],
+      "errors": [
+        {
+          "university": "Florida A&M University",
+          "sourceUrl": "https://www.famu.edu/students/career-and-professional-development-center/index.php",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "Florida A&M University",
+          "sourceUrl": "https://www.famu.edu/students/career-and-professional-development-center/students/career-fairs.php",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "Florida A&M University",
+          "sourceUrl": "https://www.famu.edu/students/career-and-professional-development-center/employers/index.php",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "Arizona State University",
+      "visitedPages": 4,
+      "results": [],
+      "errors": [
+        {
+          "university": "Arizona State University",
+          "sourceUrl": "https://career.asu.edu/employers/",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "Arizona State University",
+          "sourceUrl": "https://career.asu.edu/channels/events/",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "Arizona State University",
+          "sourceUrl": "https://career.asu.edu/cdn-cgi/l/email-protection#43202231262631302631352a202630032230366d262736",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "University of Arizona",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "University of Arizona",
+          "pageTitle": "Career Fairs & Networking Events – Center for Career Readiness",
+          "sourceUrl": "https://career.arizona.edu/channels/career-fairs/",
+          "matchedText": "The STeM fair is one of the most dynamic fairs held during University of Arizona spring Career Days. Organizations can connect with students in all areas of Science, Technology, Engineering, Photonics, and Math. For the best engagement, we recommend you post your open opportun...",
+          "eventName": "The STeM fair is one of the most dynamic fairs held during University of Arizona spring Career Days.",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 12,
+          "matchedKeywords": [
+            "engineering",
+            "internship"
+          ]
+        },
+        {
+          "university": "University of Arizona",
+          "pageTitle": "Career Fairs & Networking Events – Center for Career Readiness",
+          "sourceUrl": "https://career.arizona.edu/channels/career-fairs/",
+          "matchedText": "The fall STEM fair is one of the largest and most well-attended fairs held during University of Arizona Career Days. This fair showcases opportunities from organizations and industries in all areas of Science, Technology, Engineering, Photonics, and Math. For the best engageme...",
+          "eventName": "The fall STEM fair is one of the largest and most well-attended fairs held during University of Arizona Career Days.",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 12,
+          "matchedKeywords": [
+            "engineering",
+            "internship"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "university": "Brigham Young University",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "Brigham Young University",
+          "pageTitle": "Employer FAQ",
+          "sourceUrl": "https://careers.byu.edu/employers/fairs-and-events/faq",
+          "matchedText": "Toggle ItemWhen do I need to arrive to set up my booth for the Fairs? 1/22 Civil & Construction Career Fair: 7:00 AM - 8:45 AM1/22 STEM Career Fair: 7:00 AM - 8:45 AM2/5 Career Fair: 7:00 AM - 8:45 AM2/20 School of Communications Fair: 8:00 AM - 9:45 AM2/24 Education Fair: 1:0...",
+          "eventName": "1/22 Civil & Construction Career Fair: 7:00 AM - 8:45 AM1/22 STEM Career Fair: 7:00 AM - 8:45 AM2/5 Career Fair: 7:00...",
+          "dateSnippet": "1/22",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "employer-page"
+          ]
+        }
+      ],
+      "errors": [
+        {
+          "university": "Brigham Young University",
+          "sourceUrl": "https://careers.byu.edu/employers",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "University of Utah",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "University of Utah",
+          "pageTitle": "Recruit at Career Fairs – U Career Success",
+          "sourceUrl": "https://careers.utah.edu/employers/career-fairs/",
+          "matchedText": "Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Recruiting",
+          "eventName": "Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Re...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 19,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Utah",
+          "pageTitle": "Recruit at Career Fairs – U Career Success",
+          "sourceUrl": "https://careers.utah.edu/employers/career-fairs/#main",
+          "matchedText": "Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Recruiting",
+          "eventName": "Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Re...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 19,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Utah",
+          "pageTitle": "Recruit at Career Fairs – U Career Success",
+          "sourceUrl": "https://careers.utah.edu/employers/career-fairs/#meettheteam",
+          "matchedText": "Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Recruiting",
+          "eventName": "Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Re...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 19,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Utah",
+          "pageTitle": "Recruit at Career Fairs – U Career Success",
+          "sourceUrl": "https://careers.utah.edu/employers/career-fairs/#back-to-top",
+          "matchedText": "Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Recruiting",
+          "eventName": "Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Re...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 19,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Utah",
+          "pageTitle": "Recruiters & Employers – U Career Success",
+          "sourceUrl": "https://careers.utah.edu/employers/",
+          "matchedText": "Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Recruiting",
+          "eventName": "Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Re...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 17,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "university": "Northwestern University",
+      "visitedPages": 6,
+      "results": [],
+      "errors": []
+    },
+    {
+      "university": "University of Chicago",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "University of Chicago",
+          "pageTitle": "Career Fair | Career Advancement",
+          "sourceUrl": "https://careeradvancement.uchicago.edu/pre-recruiting-programs/september-programs/career-fair/",
+          "matchedText": "Recruiting in 2026-2027 academic year? Meet and network with leading employers across industries at UChicago's Fall Career Fair on Monday, September 28, 2026!",
+          "eventName": "Meet and network with leading employers across industries at UChicago's Fall Career Fair on Monday, September 28, 2026!",
+          "dateSnippet": "September 28, 2026",
+          "locationSnippet": "",
+          "relevanceScore": 16,
+          "matchedKeywords": [
+            "employers"
+          ]
+        },
+        {
+          "university": "University of Chicago",
+          "pageTitle": "Career Fair | Career Advancement",
+          "sourceUrl": "https://careeradvancement.uchicago.edu/student-opportunities/day-long-programs/career-fair/",
+          "matchedText": "Recruiting in 2026-2027 academic year? Meet and network with leading employers across industries at UChicago's Fall Career Fair on Monday, September 28, 2026!",
+          "eventName": "Meet and network with leading employers across industries at UChicago's Fall Career Fair on Monday, September 28, 2026!",
+          "dateSnippet": "September 28, 2026",
+          "locationSnippet": "",
+          "relevanceScore": 16,
+          "matchedKeywords": [
+            "employers"
+          ]
+        },
+        {
+          "university": "University of Chicago",
+          "pageTitle": "Recruit Now | Career Advancement",
+          "sourceUrl": "https://careeradvancement.uchicago.edu/hire-uchicago/recruit-now/",
+          "matchedText": "Thank you to the 90+ employer partners who joined us for the Fall 2025 Career Fair! Employers connected with 2,000+ UChicago students. We look forward to next year's annual career fair: join us on Monday, September 28, 2026 at Ida Noyes Hall. Register here! Questions? Contact ...",
+          "eventName": "Thank you to the 90+ employer partners who joined us for the Fall 2025 Career Fair!",
+          "dateSnippet": "September 28, 2026",
+          "locationSnippet": "",
+          "relevanceScore": 14,
+          "matchedKeywords": [
+            "employers"
+          ]
+        }
+      ],
+      "errors": [
+        {
+          "university": "University of Chicago",
+          "sourceUrl": "https://careeradvancement.uchicago.edu/employers/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "University of Illinois Urbana-Champaign",
+      "visitedPages": 6,
+      "results": [],
+      "errors": [
+        {
+          "university": "University of Illinois Urbana-Champaign",
+          "sourceUrl": "https://www.careercenter.illinois.edu/employers",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "University of Illinois Chicago",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "University of Illinois Chicago",
+          "pageTitle": "Career Fair Information for Employers | Career Services | University of Illinois Chicago",
+          "sourceUrl": "https://careerservices.uic.edu/employers/career-job-fairs-information-employers/",
+          "matchedText": "Career Fairs 2026. Career Fairs 2026 Copy link Employers Register Here for our UIC Spring Career & Internship Fair – Employer Registration which will take place on Tuesday, March 12, 2026, from 11:00 a.m. – 4:00 p.m. in Student Center East, Illinois Room at 750 South Halsted S...",
+          "eventName": "Career Fairs 2026 Copy link Employers Register Here for our UIC Spring Career & Internship Fair – Employer Registrati...",
+          "dateSnippet": "March 12, 2026",
+          "locationSnippet": "Room at",
+          "relevanceScore": 22,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Illinois Chicago",
+          "pageTitle": "Career Fair Information for Employers | Career Services | University of Illinois Chicago",
+          "sourceUrl": "https://careerservices.uic.edu/employers/career-job-fairs-information-employers/",
+          "matchedText": "Employers Register Here for our UIC Spring Career & Internship Fair – Employer Registration which will take place on Tuesday, March 12, 2026, from 11:00 a.m. – 4:00 p.m. in Student Center East, Illinois Room at 750 South Halsted St, Chicago, IL 60607.",
+          "eventName": "Employers Register Here for our UIC Spring Career & Internship Fair – Employer Registration which will take place on ...",
+          "dateSnippet": "March 12, 2026",
+          "locationSnippet": "Room at",
+          "relevanceScore": 22,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Illinois Chicago",
+          "pageTitle": "Career Fair Information for Employers | Career Services | University of Illinois Chicago",
+          "sourceUrl": "https://careerservices.uic.edu/employers/career-job-fairs-information-employers/#menu-secondary",
+          "matchedText": "Career Fairs 2026. Career Fairs 2026 Copy link Employers Register Here for our UIC Spring Career & Internship Fair – Employer Registration which will take place on Tuesday, March 12, 2026, from 11:00 a.m. – 4:00 p.m. in Student Center East, Illinois Room at 750 South Halsted S...",
+          "eventName": "Career Fairs 2026 Copy link Employers Register Here for our UIC Spring Career & Internship Fair – Employer Registrati...",
+          "dateSnippet": "March 12, 2026",
+          "locationSnippet": "Room at",
+          "relevanceScore": 22,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Illinois Chicago",
+          "pageTitle": "Career Fair Information for Employers | Career Services | University of Illinois Chicago",
+          "sourceUrl": "https://careerservices.uic.edu/employers/career-job-fairs-information-employers/#menu-secondary",
+          "matchedText": "Employers Register Here for our UIC Spring Career & Internship Fair – Employer Registration which will take place on Tuesday, March 12, 2026, from 11:00 a.m. – 4:00 p.m. in Student Center East, Illinois Room at 750 South Halsted St, Chicago, IL 60607.",
+          "eventName": "Employers Register Here for our UIC Spring Career & Internship Fair – Employer Registration which will take place on ...",
+          "dateSnippet": "March 12, 2026",
+          "locationSnippet": "Room at",
+          "relevanceScore": 22,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Illinois Chicago",
+          "pageTitle": "Career Fair Information for Employers | Career Services | University of Illinois Chicago",
+          "sourceUrl": "https://careerservices.uic.edu/employers/career-job-fairs-information-employers/#red-main",
+          "matchedText": "Career Fairs 2026. Career Fairs 2026 Copy link Employers Register Here for our UIC Spring Career & Internship Fair – Employer Registration which will take place on Tuesday, March 12, 2026, from 11:00 a.m. – 4:00 p.m. in Student Center East, Illinois Room at 750 South Halsted S...",
+          "eventName": "Career Fairs 2026 Copy link Employers Register Here for our UIC Spring Career & Internship Fair – Employer Registrati...",
+          "dateSnippet": "March 12, 2026",
+          "locationSnippet": "Room at",
+          "relevanceScore": 22,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Illinois Chicago",
+          "pageTitle": "Career Fair Information for Employers | Career Services | University of Illinois Chicago",
+          "sourceUrl": "https://careerservices.uic.edu/employers/career-job-fairs-information-employers/#red-main",
+          "matchedText": "Employers Register Here for our UIC Spring Career & Internship Fair – Employer Registration which will take place on Tuesday, March 12, 2026, from 11:00 a.m. – 4:00 p.m. in Student Center East, Illinois Room at 750 South Halsted St, Chicago, IL 60607.",
+          "eventName": "Employers Register Here for our UIC Spring Career & Internship Fair – Employer Registration which will take place on ...",
+          "dateSnippet": "March 12, 2026",
+          "locationSnippet": "Room at",
+          "relevanceScore": 22,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Illinois Chicago",
+          "pageTitle": "UIC Career Fair Descriptions | Career Services | University of Illinois Chicago",
+          "sourceUrl": "https://careerservices.uic.edu/uic-career-fair-descriptions/",
+          "matchedText": "Spring Internship & Career Fair This career fair hosts employers from various industries including technology, engineering, government, business, healthcare and pharmaceuticals, and non-profit. The fair is open to UIC students and alumni of any major, and frequently features f...",
+          "eventName": "Spring Internship & Career Fair This career fair hosts employers from various industries including technology, engine...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 18,
+          "matchedKeywords": [
+            "engineering",
+            "internship",
+            "employers"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "university": "Chicago State University",
+      "visitedPages": 6,
+      "results": [],
+      "errors": [
+        {
+          "university": "Chicago State University",
+          "sourceUrl": "https://www.csu.edu/careerdevelopment/employers.htm",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "Chicago State University",
+          "sourceUrl": "https://www.csu.edu/careerdevelopment/students/events.htm",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "University of Pennsylvania",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "University of Pennsylvania",
+          "pageTitle": "STEM Career Fair: Employers – Career Services | University of Pennsylvania",
+          "sourceUrl": "https://careerservices.upenn.edu/career-fairs/stem2026fair/",
+          "matchedText": "BONUS FREE REGISTRATION FOR THE VIRTUAL CAREER FAIR: Employers whose registration is approved for the STEM & Sustainability Career Fair can register for free for the Virtual All-Industries Career Fair on Thursday, February 19th. This gives employers access to dedicated, 10-min...",
+          "eventName": "BONUS FREE REGISTRATION FOR THE VIRTUAL CAREER FAIR: Employers whose registration is approved for the STEM & Sustaina...",
+          "dateSnippet": "February 19",
+          "locationSnippet": "VIRTUAL",
+          "relevanceScore": 22,
+          "matchedKeywords": [
+            "sustainability",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Pennsylvania",
+          "pageTitle": "STEM Career Fair: Employers – Career Services | University of Pennsylvania",
+          "sourceUrl": "https://careerservices.upenn.edu/career-fairs/stem2026fair/",
+          "matchedText": "REVIEW RESUME BOOKS: We will create resume books for this year’s event, broken down by degree and whether students/postdocs are seeking internships or full-time opportunities. Employers will receive a link to resumes from students and postdocs registered for this career fair o...",
+          "eventName": "Employers will receive a link to resumes from students and postdocs registered for this career fair one week prior to...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 19,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Pennsylvania",
+          "pageTitle": "STEM Career Fair: Employers – Career Services | University of Pennsylvania",
+          "sourceUrl": "https://careerservices.upenn.edu/career-fairs/stem2026fair/",
+          "matchedText": "We encourage employers to register before the end of January 2026 to be included in all marketing communications to students and postdocs about this career fair. The registration deadline is on Friday, January 30th at 12:00PM EST.",
+          "eventName": "We encourage employers to register before the end of January 2026 to be included in all marketing communications to s...",
+          "dateSnippet": "January 20",
+          "locationSnippet": "",
+          "relevanceScore": 19,
+          "matchedKeywords": [
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Pennsylvania",
+          "pageTitle": "2025 Employer Facing | All Industry Virtual Career Fair – Career Services | University of Pennsylvania",
+          "sourceUrl": "http://careerservices.upenn.edu/2025-employer-facing-all-industry-virtual-career-fair",
+          "matchedText": "Our virtual career fair will provide the opportunity to speak informally with highly-qualified students and postdocs interested in learning about your organization and collect resumes from interested candidates. The fair is attended by students in all of Penn’s undergraduate p...",
+          "eventName": "Our virtual career fair will provide the opportunity to speak informally with highly-qualified students and postdocs ...",
+          "dateSnippet": "",
+          "locationSnippet": "virtual",
+          "relevanceScore": 16,
+          "matchedKeywords": [
+            "graduate",
+            "internship",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Pennsylvania",
+          "pageTitle": "2025 Employer Facing | All Industry Virtual Career Fair – Career Services | University of Pennsylvania",
+          "sourceUrl": "http://careerservices.upenn.edu/2025-employer-facing-all-industry-virtual-career-fair",
+          "matchedText": "This career fair is open to all industries including opportunities for those interested in consulting, communications, consumer products, education, entertainment, finance, government, journalism, manufacturing, marketing, media, non-profits, research, retail, and more.",
+          "eventName": "This career fair is open to all industries including opportunities for those interested in consulting, communications...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "manufacturing",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Pennsylvania",
+          "pageTitle": "STEM Career Fair: Employers – Career Services | University of Pennsylvania",
+          "sourceUrl": "https://careerservices.upenn.edu/career-fairs/stem2026fair/",
+          "matchedText": "Attn: Lashae Wright, STEM & Sustainability Career Fair 2026, Suite 307Houston HallUniversity of Pennsylvania3417 Spruce StreetPhiladelphia, PA 19104",
+          "eventName": "Attn: Lashae Wright, STEM & Sustainability Career Fair 2026, Suite 307Houston HallUniversity of Pennsylvania3417 Spru...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "sustainability",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "University of Pennsylvania",
+          "pageTitle": "Career Fairs – Career Services | University of Pennsylvania",
+          "sourceUrl": "https://careerservices.upenn.edu/career-fairs/",
+          "matchedText": "The eight Ivy League schools come together to produce a unique and inspiring career fair that provides companies unparalleled access to students who have the skills and knowledge to address the complex sustainability and climate challenges of our global economy.",
+          "eventName": "The eight Ivy League schools come together to produce a unique and inspiring career fair that provides companies unpa...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 10,
+          "matchedKeywords": [
+            "sustainability"
+          ]
+        }
+      ],
+      "errors": [
+        {
+          "university": "University of Pennsylvania",
+          "sourceUrl": "https://careerservices.upenn.edu/employers/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "Carnegie Mellon University",
+      "visitedPages": 6,
+      "results": [],
+      "errors": [
+        {
+          "university": "Carnegie Mellon University",
+          "sourceUrl": "https://www.cmu.edu/career/employers-and-recruiters/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "Pennsylvania State University",
+      "visitedPages": 3,
+      "results": [],
+      "errors": [
+        {
+          "university": "Pennsylvania State University",
+          "sourceUrl": "https://career.psu.edu/",
+          "error": "fetch failed"
+        },
+        {
+          "university": "Pennsylvania State University",
+          "sourceUrl": "https://career.psu.edu/channels/events/",
+          "error": "fetch failed"
+        },
+        {
+          "university": "Pennsylvania State University",
+          "sourceUrl": "https://career.psu.edu/employers/",
+          "error": "fetch failed"
+        }
+      ]
+    },
+    {
+      "university": "Cheyney University of Pennsylvania",
+      "visitedPages": 3,
+      "results": [],
+      "errors": [
+        {
+          "university": "Cheyney University of Pennsylvania",
+          "sourceUrl": "https://www.cheyney.edu/student-life/career-services",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "Cheyney University of Pennsylvania",
+          "sourceUrl": "https://www.cheyney.edu/student-life/career-services/career-events",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "Cheyney University of Pennsylvania",
+          "sourceUrl": "https://www.cheyney.edu/student-life/career-services/employer-services",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "Lehigh University",
+      "visitedPages": 6,
+      "results": [],
+      "errors": [
+        {
+          "university": "Lehigh University",
+          "sourceUrl": "https://careercenter.lehigh.edu/employers",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "Temple University",
+      "visitedPages": 6,
+      "results": [],
+      "errors": []
+    },
+    {
+      "university": "Drexel University",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "Drexel University",
+          "pageTitle": "Nursing Health Professions Career Fair",
+          "sourceUrl": "https://drexel.edu/scdc/about/events/career-fairs/health-professions-career-fair",
+          "matchedText": "Up to 100 representatives per organization can attend, and each representative will be able to create their own customized schedule. Employers must create their schedules before March 27, 2026, the week student registration opens. See the cancellation and refund policy below f...",
+          "eventName": "This Handshake help article on How to Set a Schedule for a Virtual Fair can help guide you through the process.",
+          "dateSnippet": "March 27, 2026",
+          "locationSnippet": "Virtual",
+          "relevanceScore": 17,
+          "matchedKeywords": [
+            "employers"
+          ]
+        },
+        {
+          "university": "Drexel University",
+          "pageTitle": "Steinbright Career Development Center",
+          "sourceUrl": "https://drexel.edu/scdc/",
+          "matchedText": "Calendar of Events. Calendar of Events March 18, 2026 3:00 — 4:00 PM Virtual Pre-Law or Graduate School Drop-In Hours zoom-register on Handshake March 30, 2026 1:00 — 2:00 PM Graduate Students Resume Dropins Office of Graduate Studies 3141 Chestnut Street Main Building, Suite ...",
+          "eventName": "Calendar of Events March 18, 2026 3:00 — 4:00 PM Virtual Pre-Law or Graduate School Drop-In Hours zoom-register on Ha...",
+          "dateSnippet": "March 18, 2026",
+          "locationSnippet": "Virtual",
+          "relevanceScore": 11,
+          "matchedKeywords": [
+            "graduate"
+          ]
+        },
+        {
+          "university": "Drexel University",
+          "pageTitle": "Nursing Health Professions Career Fair",
+          "sourceUrl": "https://drexel.edu/scdc/about/events/career-fairs/health-professions-career-fair",
+          "matchedText": "Virtual Nursing & Health Professions Career Fair Tuesday, April 7, from 4 p.m. to 7 p.m. ET",
+          "eventName": "Virtual Nursing & Health Professions Career Fair Tuesday, April 7, from 4 p.m.",
+          "dateSnippet": "April 7",
+          "locationSnippet": "Virtual",
+          "relevanceScore": 11,
+          "matchedKeywords": []
+        },
+        {
+          "university": "Drexel University",
+          "pageTitle": "Career Fairs",
+          "sourceUrl": "https://drexel.edu/scdc/about/events/career-fairs",
+          "matchedText": "Career Fairs at Drexel From our Fall and Spring Career Fairs to the Engineering & Technology Career Fair and more, there are plenty of opportunities for students to connect with professionals.",
+          "eventName": "Career Fairs at Drexel From our Fall and Spring Career Fairs to the Engineering & Technology Career Fair and more, th...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 10,
+          "matchedKeywords": [
+            "engineering"
+          ]
+        },
+        {
+          "university": "Drexel University",
+          "pageTitle": "Career Fairs",
+          "sourceUrl": "https://drexel.edu/scdc/about/events/career-fairs",
+          "matchedText": "Nursing & Health Professions Career Fair: April 7, 4 to 7 p.m.",
+          "eventName": "Nursing & Health Professions Career Fair: April 7, 4 to 7 p.m.",
+          "dateSnippet": "April 7",
+          "locationSnippet": "",
+          "relevanceScore": 10,
+          "matchedKeywords": []
+        },
+        {
+          "university": "Drexel University",
+          "pageTitle": "Career Fairs",
+          "sourceUrl": "https://drexel.edu/scdc/about/events/career-fairs",
+          "matchedText": "Spring Career Fair: April 14, 1 to 5 p.m.",
+          "eventName": "Spring Career Fair: April 14, 1 to 5 p.m.",
+          "dateSnippet": "April 14",
+          "locationSnippet": "",
+          "relevanceScore": 10,
+          "matchedKeywords": []
+        },
+        {
+          "university": "Drexel University",
+          "pageTitle": "Career Fairs",
+          "sourceUrl": "https://drexel.edu/scdc/about/events/career-fairs",
+          "matchedText": "Engineering & Technology Career Fair: January/February",
+          "eventName": "Engineering & Technology Career Fair: January/February",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 10,
+          "matchedKeywords": [
+            "engineering"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "university": "Bryn Mawr College",
+      "visitedPages": 6,
+      "results": [],
+      "errors": [
+        {
+          "university": "Bryn Mawr College",
+          "sourceUrl": "https://www.brynmawr.edu/inside/offices-services/career-civic-engagement-center/employers",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "Bryn Mawr College",
+          "sourceUrl": "https://www.brynmawr.edu/inside/offices-services/career-civic-engagement-center/events",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "Bryn Mawr College",
+          "sourceUrl": "https://www.brynmawr.edu/career-civic/recruiting-bryn-mawr-students-and-graduates/employer-recruiting-policies",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "Massachusetts Institute of Technology",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "Massachusetts Institute of Technology",
+          "pageTitle": "Career fairs – Career Advising & Professional Development | MIT",
+          "sourceUrl": "https://capd.mit.edu/channels/attend-a-career-fair/?utc_src_link=foremployersnav",
+          "matchedText": "Career Fairs are just one type of recruiting activity for you to connect with employers, explore industries and learn about potential internship and job opportunities. To get the most of your career fair experience please see the following resources:",
+          "eventName": "To get the most of your career fair experience please see the following resources:",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 19,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Massachusetts Institute of Technology",
+          "pageTitle": "Career fairs – Career Advising & Professional Development | MIT",
+          "sourceUrl": "https://capd.mit.edu/channels/attend-a-career-fair/?utc_src_link=foremployersnav",
+          "matchedText": "MIT career fairs (Fall Career Fair and Spring Career Night) are open to MIT undergraduates, graduate students, postdocs, and alumni. This means a event with many attendees all wanting to interface with employers, and as busy doctoral and postdoctoral scholars, …",
+          "eventName": "MIT career fairs (Fall Career Fair and Spring Career Night) are open to MIT undergraduates, graduate students, postdo...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 19,
+          "matchedKeywords": [
+            "graduate",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Massachusetts Institute of Technology",
+          "pageTitle": "Career fairs – Career Advising & Professional Development | MIT",
+          "sourceUrl": "https://capd.mit.edu/channels/attend-a-career-fair/?utc_src_link=foremployersnav#content",
+          "matchedText": "Career Fairs are just one type of recruiting activity for you to connect with employers, explore industries and learn about potential internship and job opportunities. To get the most of your career fair experience please see the following resources:",
+          "eventName": "To get the most of your career fair experience please see the following resources:",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 19,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Massachusetts Institute of Technology",
+          "pageTitle": "Career fairs – Career Advising & Professional Development | MIT",
+          "sourceUrl": "https://capd.mit.edu/channels/attend-a-career-fair/?utc_src_link=foremployersnav#content",
+          "matchedText": "MIT career fairs (Fall Career Fair and Spring Career Night) are open to MIT undergraduates, graduate students, postdocs, and alumni. This means a event with many attendees all wanting to interface with employers, and as busy doctoral and postdoctoral scholars, …",
+          "eventName": "MIT career fairs (Fall Career Fair and Spring Career Night) are open to MIT undergraduates, graduate students, postdo...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 19,
+          "matchedKeywords": [
+            "graduate",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Massachusetts Institute of Technology",
+          "pageTitle": "Career fairs – Career Advising & Professional Development | MIT",
+          "sourceUrl": "https://capd.mit.edu/channels/attend-a-career-fair/?utc_src_link=foremployersnav#main-nav-skipper",
+          "matchedText": "Career Fairs are just one type of recruiting activity for you to connect with employers, explore industries and learn about potential internship and job opportunities. To get the most of your career fair experience please see the following resources:",
+          "eventName": "To get the most of your career fair experience please see the following resources:",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 19,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Massachusetts Institute of Technology",
+          "pageTitle": "Career fairs – Career Advising & Professional Development | MIT",
+          "sourceUrl": "https://capd.mit.edu/channels/attend-a-career-fair/?utc_src_link=foremployersnav#main-nav-skipper",
+          "matchedText": "MIT career fairs (Fall Career Fair and Spring Career Night) are open to MIT undergraduates, graduate students, postdocs, and alumni. This means a event with many attendees all wanting to interface with employers, and as busy doctoral and postdoctoral scholars, …",
+          "eventName": "MIT career fairs (Fall Career Fair and Spring Career Night) are open to MIT undergraduates, graduate students, postdo...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 19,
+          "matchedKeywords": [
+            "graduate",
+            "employers",
+            "employer-page"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "university": "Harvard University",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "Harvard University",
+          "pageTitle": "Events – Harvard FAS | Mignone Center for Career Success",
+          "sourceUrl": "https://careerservices.fas.harvard.edu/events/?ctag%5B%5D=career-fairs&ctag%5B%5D=info-sessions&ctag%5B%5D=graduate-professional-school-info-sessions",
+          "matchedText": "Event: Vault Events: Graduate School and Certificate Program Virtual Fair. Mar 19 Event: Vault Events: Graduate School and Certificate Program Virtual Fair Thursday, March 19, 2026 11am - 3pm Thu, Mar 19 from 11am - 3pm Virtual",
+          "eventName": "Event: Vault Events: Graduate School and Certificate Program Virtual Fair.",
+          "dateSnippet": "Mar 19",
+          "locationSnippet": "Virtual",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "graduate"
+          ]
+        },
+        {
+          "university": "Harvard University",
+          "pageTitle": "Harvard FAS Career Fairs – Harvard FAS | Mignone Center for Career Success",
+          "sourceUrl": "https://careerservices.fas.harvard.edu/resources/mcs-career-fairs/",
+          "matchedText": "Ivy+ Environment & Sustainability Virtual Job & Internship Fair",
+          "eventName": "Ivy+ Environment & Sustainability Virtual Job & Internship Fair",
+          "dateSnippet": "",
+          "locationSnippet": "Virtual",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "sustainability",
+            "internship"
+          ]
+        },
+        {
+          "university": "Harvard University",
+          "pageTitle": "All Ivy Environmental & Sustainable Development Career Fair – Harvard FAS | Mignone Center for Career Success",
+          "sourceUrl": "https://careerservices.fas.harvard.edu/resources/all-ivy-environmental-sustainable-development-career-fair/",
+          "matchedText": "Ivy+ Environment & Sustainability Virtual Job & Internship Fair",
+          "eventName": "Ivy+ Environment & Sustainability Virtual Job & Internship Fair",
+          "dateSnippet": "",
+          "locationSnippet": "Virtual",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "sustainability",
+            "internship"
+          ]
+        },
+        {
+          "university": "Harvard University",
+          "pageTitle": "All Ivy Environmental & Sustainable Development Career Fair – Harvard FAS | Mignone Center for Career Success",
+          "sourceUrl": "https://careerservices.fas.harvard.edu/resources/all-ivy-environmental-sustainable-development-career-fair/",
+          "matchedText": "Each year, the eight Ivy League schools come together to produce a unique and inspiring career fair that connects public agencies, consulting firms, nonprofit organizations, and businesses with undergraduate, graduate, and PhD level students who have the skills and knowledge t...",
+          "eventName": "Each year, the eight Ivy League schools come together to produce a unique and inspiring career fair that connects pub...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 12,
+          "matchedKeywords": [
+            "sustainability",
+            "graduate"
+          ]
+        },
+        {
+          "university": "Harvard University",
+          "pageTitle": "Events – Harvard FAS | Mignone Center for Career Success",
+          "sourceUrl": "https://careerservices.fas.harvard.edu/events/?ctag%5B%5D=career-fairs&ctag%5B%5D=info-sessions&ctag%5B%5D=graduate-professional-school-info-sessions",
+          "matchedText": "Event: National Organization on Disability 2026 Virtual Career Fair. Mar 24 Event: National Organization on Disability 2026 Virtual Career Fair Tuesday, March 24, 2026 10:30am - 1:30pm Tue, Mar 24 from 10:30am - 1:30pm Virtual",
+          "eventName": "Event: National Organization on Disability 2026 Virtual Career Fair.",
+          "dateSnippet": "Mar 24",
+          "locationSnippet": "Virtual",
+          "relevanceScore": 11,
+          "matchedKeywords": []
+        },
+        {
+          "university": "Harvard University",
+          "pageTitle": "Events – Harvard FAS | Mignone Center for Career Success",
+          "sourceUrl": "https://careerservices.fas.harvard.edu/events/?ctag%5B%5D=career-fairs&ctag%5B%5D=info-sessions&ctag%5B%5D=graduate-professional-school-info-sessions",
+          "matchedText": "Event: City of Cambridge: Health and Human Services Job Fair. Mar 25 Event: City of Cambridge: Health and Human Services Job Fair Wednesday, March 25, 2026 11am - 1pm Wed, Mar 25 from 11am - 1pm Central Square Library (45 Pearl St.)",
+          "eventName": "Event: City of Cambridge: Health and Human Services Job Fair.",
+          "dateSnippet": "Mar 25",
+          "locationSnippet": "",
+          "relevanceScore": 10,
+          "matchedKeywords": []
+        },
+        {
+          "university": "Harvard University",
+          "pageTitle": "Harvard FAS Career Fairs – Harvard FAS | Mignone Center for Career Success",
+          "sourceUrl": "https://careerservices.fas.harvard.edu/resources/mcs-career-fairs/",
+          "matchedText": "Handout: Salata Institute Climate and Sustainability Career Expo",
+          "eventName": "Handout: Salata Institute Climate and Sustainability Career Expo",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 10,
+          "matchedKeywords": [
+            "sustainability"
+          ]
+        },
+        {
+          "university": "Harvard University",
+          "pageTitle": "Harvard FAS Career Fairs – Harvard FAS | Mignone Center for Career Success",
+          "sourceUrl": "https://careerservices.fas.harvard.edu/resources/mcs-career-fairs/",
+          "matchedText": "Climate and Sustainability Career Expo",
+          "eventName": "Climate and Sustainability Career Expo",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 10,
+          "matchedKeywords": [
+            "sustainability"
+          ]
+        }
+      ],
+      "errors": [
+        {
+          "university": "Harvard University",
+          "sourceUrl": "https://careerservices.fas.harvard.edu/employers/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "Boston College",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "Boston College",
+          "pageTitle": "Career Fairs and Networking Events - Career Center - Boston College",
+          "sourceUrl": "https://www.bc.edu/content/bc-web/offices/studentaffairs/sites/careers/sites/employers/recruit-at-bc/career-fairs.html",
+          "matchedText": "What is the process for approving my employer registration?. What is the process for approving my employer registration? We are committed to offering our students a diverse mix of job and internship opportunities from a variety of industries. Therefore, selection of career fai...",
+          "eventName": "Therefore, selection of career fair employers is based on current job market conditions and student demands.",
+          "dateSnippet": "",
+          "locationSnippet": "Career Center",
+          "relevanceScore": 20,
+          "matchedKeywords": [
+            "internship",
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Boston College",
+          "pageTitle": "Career Fairs and Networking Events - Career Center - Boston College",
+          "sourceUrl": "https://www.bc.edu/content/bc-web/offices/studentaffairs/sites/careers/sites/employers/recruit-at-bc/career-fairs.html",
+          "matchedText": "SEC / ACC Virtual Career Fair Wednesday, April 2, 2026 Virtual Employer registration will be available as the event approaches.",
+          "eventName": "SEC / ACC Virtual Career Fair Wednesday, April 2, 2026 Virtual Employer registration will be available as the event a...",
+          "dateSnippet": "April 2, 2026",
+          "locationSnippet": "Virtual",
+          "relevanceScore": 18,
+          "matchedKeywords": [
+            "employers",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Boston College",
+          "pageTitle": "Career Fairs and Networking Events - Career Center - Boston College",
+          "sourceUrl": "https://www.bc.edu/content/bc-web/offices/studentaffairs/sites/careers/sites/employers/recruit-at-bc/career-fairs.html",
+          "matchedText": "Just In Time Virtual Career Fair Friday, May 1, 2026 Virtual Registration is now open on Handshake.",
+          "eventName": "Just In Time Virtual Career Fair Friday, May 1, 2026 Virtual Registration is now open on Handshake.",
+          "dateSnippet": "May 1, 2026",
+          "locationSnippet": "Virtual",
+          "relevanceScore": 14,
+          "matchedKeywords": [
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Boston College",
+          "pageTitle": "Career Fairs - Career Center - Boston College",
+          "sourceUrl": "https://www.bc.edu/content/bc-web/offices/studentaffairs/sites/careers/connect/career-fairs.html",
+          "matchedText": "SEC / ACC Virtual Career Fair Wednesday, April 2, 2026 Virtual Student registration will be available on Handshake as the event approaches.",
+          "eventName": "SEC / ACC Virtual Career Fair Wednesday, April 2, 2026 Virtual Student registration will be available on Handshake as...",
+          "dateSnippet": "April 2, 2026",
+          "locationSnippet": "Virtual",
+          "relevanceScore": 11,
+          "matchedKeywords": []
+        },
+        {
+          "university": "Boston College",
+          "pageTitle": "Career Fairs - Career Center - Boston College",
+          "sourceUrl": "https://www.bc.edu/content/bc-web/offices/studentaffairs/sites/careers/connect/career-fairs.html",
+          "matchedText": "Just In Time Virtual Career Fair Friday, May 1, 2026 Virtual Registration is now open on Handshake.",
+          "eventName": "Just In Time Virtual Career Fair Friday, May 1, 2026 Virtual Registration is now open on Handshake.",
+          "dateSnippet": "May 1, 2026",
+          "locationSnippet": "Virtual",
+          "relevanceScore": 11,
+          "matchedKeywords": []
+        },
+        {
+          "university": "Boston College",
+          "pageTitle": "Career Fairs - Career Center - Boston College",
+          "sourceUrl": "https://www.bc.edu/content/bc-web/offices/studentaffairs/sites/careers/connect/career-fairs.html",
+          "matchedText": "Business & Technology Career Fair Friday, September 12, 2025 11:00 a.m.–3:00 p.m. ET On campus at Conte Forum This event has now passed.",
+          "eventName": "Business & Technology Career Fair Friday, September 12, 2025 11:00 a.m.–3:00 p.m.",
+          "dateSnippet": "September 12, 2025",
+          "locationSnippet": "",
+          "relevanceScore": 10,
+          "matchedKeywords": []
+        },
+        {
+          "university": "Boston College",
+          "pageTitle": "Career Fairs - Career Center - Boston College",
+          "sourceUrl": "https://www.bc.edu/content/bc-web/offices/studentaffairs/sites/careers/connect/career-fairs.html",
+          "matchedText": "Social Change, Policy & Nonprofit Networking Event Thursday, October 23, 2025 On campus at Corcoran Commons This event has now passed.",
+          "eventName": "Social Change, Policy & Nonprofit Networking Event Thursday, October 23, 2025 On campus at Corcoran Commons This even...",
+          "dateSnippet": "October 23, 2025",
+          "locationSnippet": "",
+          "relevanceScore": 10,
+          "matchedKeywords": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "university": "Tufts University",
+      "visitedPages": 6,
+      "results": [],
+      "errors": [
+        {
+          "university": "Tufts University",
+          "sourceUrl": "https://careers.tufts.edu/employers/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "Northeastern University",
+      "visitedPages": 6,
+      "results": [],
+      "errors": [
+        {
+          "university": "Northeastern University",
+          "sourceUrl": "https://careers.northeastern.edu/employer-engagement-and-career-design/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "Wellesley College",
+      "visitedPages": 6,
+      "results": [],
+      "errors": [
+        {
+          "university": "Wellesley College",
+          "sourceUrl": "https://www.wellesley.edu/careereducation/employers",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "Amherst College",
+      "visitedPages": 6,
+      "results": [
+        {
+          "university": "Amherst College",
+          "pageTitle": "Employers – Amherst College | Loeb Center for Career Exploration and Planning",
+          "sourceUrl": "https://www.amherst.edu/campuslife/careers/employers",
+          "matchedText": "Discover Career Paths Career Communities Arts & Communication Business & Finance Education Professions Health Professions Science & Technology Social Impact Professional / Graduate School Advising Law School Advising Pre-Health/Medical School Advising Signature Programs Alumni...",
+          "eventName": "Discover Career Paths Career Communities Arts & Communication Business & Finance Education Professions Health Profess...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "graduate",
+            "internship",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Amherst College",
+          "pageTitle": "Employers – Amherst College | Loeb Center for Career Exploration and Planning",
+          "sourceUrl": "https://www.amherst.edu/campuslife/careers/employers#content",
+          "matchedText": "Discover Career Paths Career Communities Arts & Communication Business & Finance Education Professions Health Professions Science & Technology Social Impact Professional / Graduate School Advising Law School Advising Pre-Health/Medical School Advising Signature Programs Alumni...",
+          "eventName": "Discover Career Paths Career Communities Arts & Communication Business & Finance Education Professions Health Profess...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "graduate",
+            "internship",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Amherst College",
+          "pageTitle": "Employers – Amherst College | Loeb Center for Career Exploration and Planning",
+          "sourceUrl": "https://www.amherst.edu/campuslife/careers/employers#main-nav-skipper",
+          "matchedText": "Discover Career Paths Career Communities Arts & Communication Business & Finance Education Professions Health Professions Science & Technology Social Impact Professional / Graduate School Advising Law School Advising Pre-Health/Medical School Advising Signature Programs Alumni...",
+          "eventName": "Discover Career Paths Career Communities Arts & Communication Business & Finance Education Professions Health Profess...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "graduate",
+            "internship",
+            "employer-page"
+          ]
+        },
+        {
+          "university": "Amherst College",
+          "pageTitle": "Employers – Amherst College | Loeb Center for Career Exploration and Planning",
+          "sourceUrl": "https://www.amherst.edu/campuslife/careers/employers#!",
+          "matchedText": "Discover Career Paths Career Communities Arts & Communication Business & Finance Education Professions Health Professions Science & Technology Social Impact Professional / Graduate School Advising Law School Advising Pre-Health/Medical School Advising Signature Programs Alumni...",
+          "eventName": "Discover Career Paths Career Communities Arts & Communication Business & Finance Education Professions Health Profess...",
+          "dateSnippet": "",
+          "locationSnippet": "",
+          "relevanceScore": 13,
+          "matchedKeywords": [
+            "graduate",
+            "internship",
+            "employer-page"
+          ]
+        }
+      ],
+      "errors": [
+        {
+          "university": "Amherst College",
+          "sourceUrl": "https://www.amherst.edu/campuslife/careers/events",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "Smith College",
+      "visitedPages": 3,
+      "results": [],
+      "errors": [
+        {
+          "university": "Smith College",
+          "sourceUrl": "https://www.smith.edu/academics/career-development",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "Smith College",
+          "sourceUrl": "https://www.smith.edu/academics/career-development/events",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "Smith College",
+          "sourceUrl": "https://www.smith.edu/academics/career-development/employers",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "Mount Holyoke College",
+      "visitedPages": 6,
+      "results": [],
+      "errors": [
+        {
+          "university": "Mount Holyoke College",
+          "sourceUrl": "https://www.mtholyoke.edu/directory/departments-offices-centers/career-development-center/employers",
+          "error": "HTTP 404"
+        },
+        {
+          "university": "Mount Holyoke College",
+          "sourceUrl": "https://www.mtholyoke.edu/directory/departments-offices-centers/career-development-center/events",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "university": "University of Wyoming",
+      "visitedPages": 6,
+      "results": [],
+      "errors": []
+    }
+  ]
+}

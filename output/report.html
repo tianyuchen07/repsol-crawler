@@ -1,0 +1,4526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REPSOL University Employment Fair Report</title>
+    <style>
+      :root {
+        --bg: #f7f3ea;
+        --panel: rgba(255, 252, 246, 0.88);
+        --panel-strong: #fffaf2;
+        --ink: #1f2d2f;
+        --muted: #5e6d70;
+        --accent: #d35400;
+        --accent-soft: #ffe4cf;
+        --line: rgba(31, 45, 47, 0.12);
+        --shadow: 0 18px 50px rgba(57, 46, 31, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(211, 84, 0, 0.16), transparent 30%),
+          radial-gradient(circle at top right, rgba(18, 104, 125, 0.14), transparent 28%),
+          linear-gradient(180deg, #fcf8f1 0%, #f4efe5 100%);
+      }
+
+      a {
+        color: inherit;
+        overflow-wrap: anywhere;
+      }
+
+      .page {
+        width: min(1200px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 32px 0 48px;
+      }
+
+      .hero {
+        background: linear-gradient(135deg, rgba(255, 248, 237, 0.95), rgba(247, 240, 229, 0.88));
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        padding: 32px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        position: relative;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: auto -8% -30% auto;
+        width: 280px;
+        height: 280px;
+        background: radial-gradient(circle, rgba(211, 84, 0, 0.16), transparent 68%);
+        pointer-events: none;
+      }
+
+      .eyebrow {
+        margin: 0 0 10px;
+        font-size: 0.78rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      h1, h2, h3, h4, p {
+        margin-top: 0;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 3.8rem);
+        line-height: 0.98;
+        max-width: 10ch;
+        margin-bottom: 14px;
+      }
+
+      .hero-copy {
+        max-width: 62ch;
+        color: var(--muted);
+        font-size: 1.02rem;
+      }
+
+      .summary-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 14px;
+        margin-top: 28px;
+      }
+
+      .summary-card, .university-section, .toc {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(10px);
+      }
+
+      .summary-card {
+        border-radius: 22px;
+        padding: 18px;
+      }
+
+      .summary-card strong {
+        display: block;
+        font-size: 2rem;
+        margin-bottom: 4px;
+      }
+
+      .layout {
+        display: grid;
+        grid-template-columns: 280px minmax(0, 1fr);
+        gap: 22px;
+        margin-top: 24px;
+      }
+
+      .toc {
+        position: sticky;
+        top: 18px;
+        align-self: start;
+        border-radius: 24px;
+        padding: 22px 18px;
+      }
+
+      .toc ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .toc li + li {
+        margin-top: 10px;
+      }
+
+      .toc a {
+        text-decoration: none;
+        color: var(--muted);
+        transition: color 160ms ease, transform 160ms ease;
+      }
+
+      .toc a:hover {
+        color: var(--ink);
+        transform: translateX(2px);
+      }
+
+      .content {
+        display: grid;
+        gap: 20px;
+      }
+
+      .university-section {
+        border-radius: 28px;
+        padding: 24px;
+      }
+
+      .section-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: end;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 16px;
+        margin-bottom: 18px;
+      }
+
+      .stats-inline {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .results-grid {
+        display: grid;
+        gap: 16px;
+      }
+
+      .result-card {
+        background: var(--panel-strong);
+        border: 1px solid rgba(31, 45, 47, 0.08);
+        border-radius: 22px;
+        padding: 18px;
+        overflow: hidden;
+      }
+
+      .result-topline {
+        display: flex;
+        justify-content: space-between;
+        gap: 14px;
+        align-items: start;
+      }
+
+      .result-topline h4 {
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+      }
+
+      .score {
+        white-space: nowrap;
+        background: var(--accent-soft);
+        color: var(--accent);
+        border-radius: 999px;
+        padding: 8px 12px;
+        font-size: 0.84rem;
+      }
+
+      .snippet {
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .meta-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+        margin: 0 0 16px;
+      }
+
+      .meta-grid dt {
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        margin-bottom: 4px;
+      }
+
+      .meta-grid dd {
+        margin: 0;
+        overflow-wrap: anywhere;
+      }
+
+      .meta-cell {
+        min-width: 0;
+      }
+
+      .full-width {
+        grid-column: 1 / -1;
+      }
+
+      .keyword-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .tag {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 6px 10px;
+        font-size: 0.82rem;
+        background: white;
+      }
+
+      .errors {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px dashed var(--line);
+      }
+
+      .errors ul {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+      }
+
+      .empty-state, .muted {
+        color: var(--muted);
+      }
+
+      .snippet,
+      .errors li,
+      .hero-copy {
+        overflow-wrap: anywhere;
+      }
+
+      @media (max-width: 980px) {
+        .layout {
+          grid-template-columns: 1fr;
+        }
+
+        .toc {
+          position: static;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          width: min(100% - 20px, 1200px);
+          padding-top: 20px;
+        }
+
+        .hero,
+        .university-section {
+          padding: 20px;
+          border-radius: 22px;
+        }
+
+        .section-header,
+        .result-topline {
+          display: block;
+        }
+
+        .score {
+          display: inline-block;
+          margin-bottom: 12px;
+        }
+
+        .meta-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">REPSOL Recruiting Intelligence</p>
+        <h1>University Employment Fair Report</h1>
+        <p class="hero-copy">
+          Scraped university career, employer, and event pages to surface likely employment fairs with engineering,
+          energy, internship, and employer relevance for REPSOL S.A. recruiting teams.
+        </p>
+        <p class="hero-copy">
+          Generated Mar 16, 2026, 9:44 PM. Crawl limit: 6 pages per university.
+        </p>
+        <div class="summary-grid">
+          <div class="summary-card"><strong>51</strong><span>Universities scanned</span></div>
+          <div class="summary-card"><strong>279</strong><span>Pages visited</span></div>
+          <div class="summary-card"><strong>129</strong><span>Likely fair matches</span></div>
+          <div class="summary-card"><strong>54</strong><span>Fetch issues</span></div>
+        </div>
+      </section>
+      <div class="layout">
+        <aside class="toc">
+          <p class="eyebrow">Universities</p>
+          <ul>
+            
+              <li>
+                <a href="#harvard-university">
+                  Harvard University (8)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#louisiana-state-university">
+                  Louisiana State University (8)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#texas-a-m-university">
+                  Texas A&amp;M University (8)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#university-of-california-irvine">
+                  University of California, Irvine (8)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#university-of-california-riverside">
+                  University of California, Riverside (8)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#university-of-california-santa-barbara">
+                  University of California, Santa Barbara (8)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#university-of-houston">
+                  University of Houston (8)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#boston-college">
+                  Boston College (7)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#drexel-university">
+                  Drexel University (7)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#university-of-illinois-chicago">
+                  University of Illinois Chicago (7)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#university-of-pennsylvania">
+                  University of Pennsylvania (7)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#massachusetts-institute-of-technology">
+                  Massachusetts Institute of Technology (6)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#santa-clara-university">
+                  Santa Clara University (6)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#florida-state-university">
+                  Florida State University (5)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#university-of-utah">
+                  University of Utah (5)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#university-of-washington">
+                  University of Washington (5)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#amherst-college">
+                  Amherst College (4)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#university-of-california-berkeley">
+                  University of California, Berkeley (3)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#university-of-chicago">
+                  University of Chicago (3)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#california-institute-of-technology">
+                  California Institute of Technology (2)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#university-of-arizona">
+                  University of Arizona (2)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#university-of-california-san-diego">
+                  University of California, San Diego (2)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#brigham-young-university">
+                  Brigham Young University (1)
+                </a>
+              </li>
+            
+              <li>
+                <a href="#university-of-florida">
+                  University of Florida (1)
+                </a>
+              </li>
+            
+          </ul>
+        </aside>
+        <section class="content">
+          
+    <section class="university-section" id="harvard-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Harvard University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>8 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Event: Vault Events: Graduate School and Certificate Program Virtual Fair.</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Event: Vault Events: Graduate School and Certificate Program Virtual Fair. Mar 19 Event: Vault Events: Graduate School and Certificate Program Virtual Fair Thursday, March 19, 2026 11am - 3pm Thu, Mar 19 from 11am - 3pm Virtual</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>Mar 19</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Virtual</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.fas.harvard.edu/events/?ctag%5B%5D=career-fairs&amp;ctag%5B%5D=info-sessions&amp;ctag%5B%5D=graduate-professional-school-info-sessions" target="_blank" rel="noreferrer">Events – Harvard FAS | Mignone Center for Career Success</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">graduate</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Ivy+ Environment &amp; Sustainability Virtual Job &amp; Internship Fair</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Ivy+ Environment &amp; Sustainability Virtual Job &amp; Internship Fair</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Virtual</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.fas.harvard.edu/resources/mcs-career-fairs/" target="_blank" rel="noreferrer">Harvard FAS Career Fairs – Harvard FAS | Mignone Center for Career Success</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">sustainability</span><span class="tag">internship</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Ivy+ Environment &amp; Sustainability Virtual Job &amp; Internship Fair</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Ivy+ Environment &amp; Sustainability Virtual Job &amp; Internship Fair</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Virtual</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.fas.harvard.edu/resources/all-ivy-environmental-sustainable-development-career-fair/" target="_blank" rel="noreferrer">All Ivy Environmental &amp; Sustainable Development Career Fair – Harvard FAS | Mignone Center for Career Success</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">sustainability</span><span class="tag">internship</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Each year, the eight Ivy League schools come together to produce a unique and inspiring career fair that connects pub...</h4>
+        <span class="score">Score 12</span>
+      </div>
+      <p class="snippet">Each year, the eight Ivy League schools come together to produce a unique and inspiring career fair that connects public agencies, consulting firms, nonprofit organizations, and businesses with undergraduate, graduate, and PhD level students who have the skills and knowledge t...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.fas.harvard.edu/resources/all-ivy-environmental-sustainable-development-career-fair/" target="_blank" rel="noreferrer">All Ivy Environmental &amp; Sustainable Development Career Fair – Harvard FAS | Mignone Center for Career Success</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">sustainability</span><span class="tag">graduate</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Event: National Organization on Disability 2026 Virtual Career Fair.</h4>
+        <span class="score">Score 11</span>
+      </div>
+      <p class="snippet">Event: National Organization on Disability 2026 Virtual Career Fair. Mar 24 Event: National Organization on Disability 2026 Virtual Career Fair Tuesday, March 24, 2026 10:30am - 1:30pm Tue, Mar 24 from 10:30am - 1:30pm Virtual</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>Mar 24</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Virtual</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.fas.harvard.edu/events/?ctag%5B%5D=career-fairs&amp;ctag%5B%5D=info-sessions&amp;ctag%5B%5D=graduate-professional-school-info-sessions" target="_blank" rel="noreferrer">Events – Harvard FAS | Mignone Center for Career Success</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="muted">No keyword hits recorded</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Event: City of Cambridge: Health and Human Services Job Fair.</h4>
+        <span class="score">Score 10</span>
+      </div>
+      <p class="snippet">Event: City of Cambridge: Health and Human Services Job Fair. Mar 25 Event: City of Cambridge: Health and Human Services Job Fair Wednesday, March 25, 2026 11am - 1pm Wed, Mar 25 from 11am - 1pm Central Square Library (45 Pearl St.)</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>Mar 25</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.fas.harvard.edu/events/?ctag%5B%5D=career-fairs&amp;ctag%5B%5D=info-sessions&amp;ctag%5B%5D=graduate-professional-school-info-sessions" target="_blank" rel="noreferrer">Events – Harvard FAS | Mignone Center for Career Success</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="muted">No keyword hits recorded</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Handout: Salata Institute Climate and Sustainability Career Expo</h4>
+        <span class="score">Score 10</span>
+      </div>
+      <p class="snippet">Handout: Salata Institute Climate and Sustainability Career Expo</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.fas.harvard.edu/resources/mcs-career-fairs/" target="_blank" rel="noreferrer">Harvard FAS Career Fairs – Harvard FAS | Mignone Center for Career Success</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">sustainability</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Climate and Sustainability Career Expo</h4>
+        <span class="score">Score 10</span>
+      </div>
+      <p class="snippet">Climate and Sustainability Career Expo</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.fas.harvard.edu/resources/mcs-career-fairs/" target="_blank" rel="noreferrer">Harvard FAS Career Fairs – Harvard FAS | Mignone Center for Career Success</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">sustainability</span></div>
+    </article>
+  
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://careerservices.fas.harvard.edu/employers/" target="_blank" rel="noreferrer">https://careerservices.fas.harvard.edu/employers/</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="louisiana-state-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Louisiana State University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>8 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>AI and Tech Career Fair Expand accordion.</h4>
+        <span class="score">Score 21</span>
+      </div>
+      <p class="snippet">AI and Tech Career Fair Expand accordion. AI and Tech Career Fair Expand accordion Tech-focused students can connect with employers hiring for full-time roles, internships, and summer opportunities in AI, computing, cybersecurity, data science, and related fields. Event Date: ...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>February 11, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.lsu.edu/career/employers/recruiting-hub.php#eventinfo" target="_blank" rel="noreferrer">Recruiting Hub | LSU Olinde Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Advertising and Communications Networking Event Expand accordion.</h4>
+        <span class="score">Score 21</span>
+      </div>
+      <p class="snippet">Advertising and Communications Networking Event Expand accordion. Advertising and Communications Networking Event Expand accordion Students in advertising, communications, marketing, public relations, broadcast media and related fields can connect with employers recruiting for...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>March 24, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.lsu.edu/career/employers/recruiting-hub.php#eventinfo" target="_blank" rel="noreferrer">Recruiting Hub | LSU Olinde Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Opportunity Knocks Career Fair Expand accordion.</h4>
+        <span class="score">Score 21</span>
+      </div>
+      <p class="snippet">Opportunity Knocks Career Fair Expand accordion. Opportunity Knocks Career Fair Expand accordion Students from all majors are invited to connect with employers recruiting for part-time, full-time, and internship opportunities. This event offers a broad platform to network, exp...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>March 31, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.lsu.edu/career/employers/recruiting-hub.php#eventinfo" target="_blank" rel="noreferrer">Recruiting Hub | LSU Olinde Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>AI and Tech Career Fair Expand accordion.</h4>
+        <span class="score">Score 19</span>
+      </div>
+      <p class="snippet">AI and Tech Career Fair Expand accordion. AI and Tech Career Fair Expand accordion Tech-focused students can connect with employers hiring for full-time roles, internships, and summer opportunities in AI, computing, cybersecurity, data science, and related fields. Event Date: ...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>February 11, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.lsu.edu/career/employers/recruiting-hub.php" target="_blank" rel="noreferrer">Recruiting Hub | LSU Olinde Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Advertising and Communications Networking Event Expand accordion.</h4>
+        <span class="score">Score 19</span>
+      </div>
+      <p class="snippet">Advertising and Communications Networking Event Expand accordion. Advertising and Communications Networking Event Expand accordion Students in advertising, communications, marketing, public relations, broadcast media and related fields can connect with employers recruiting for...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>March 24, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.lsu.edu/career/employers/recruiting-hub.php" target="_blank" rel="noreferrer">Recruiting Hub | LSU Olinde Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Opportunity Knocks Career Fair Expand accordion.</h4>
+        <span class="score">Score 19</span>
+      </div>
+      <p class="snippet">Opportunity Knocks Career Fair Expand accordion. Opportunity Knocks Career Fair Expand accordion Students from all majors are invited to connect with employers recruiting for part-time, full-time, and internship opportunities. This event offers a broad platform to network, exp...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>March 31, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.lsu.edu/career/employers/recruiting-hub.php" target="_blank" rel="noreferrer">Recruiting Hub | LSU Olinde Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Career Expo Expand accordion.</h4>
+        <span class="score">Score 19</span>
+      </div>
+      <p class="snippet">Career Expo Expand accordion. Career Expo Expand accordion Career Expo is our largest recruiting event of the year, connecting nearly 2,000 students and alumni of all majors with over 200 employers from across the country to form valuable career connections through a day of ne...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>February 3, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.lsu.edu/career/employers/recruiting-hub.php#eventinfo" target="_blank" rel="noreferrer">Recruiting Hub | LSU Olinde Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Career Expo Expand accordion.</h4>
+        <span class="score">Score 17</span>
+      </div>
+      <p class="snippet">Career Expo Expand accordion. Career Expo Expand accordion Career Expo is our largest recruiting event of the year, connecting nearly 2,000 students and alumni of all majors with over 200 employers from across the country to form valuable career connections through a day of ne...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>February 3, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.lsu.edu/career/employers/recruiting-hub.php" target="_blank" rel="noreferrer">Recruiting Hub | LSU Olinde Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="texas-a-m-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Texas A&amp;M University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>8 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers Employers Engage Students Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internships Recruitin...</h4>
+        <span class="score">Score 20</span>
+      </div>
+      <p class="snippet">Employers. Employers Employers Engage Students Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internships Recruiting Policies Recruiting Unique Populations Salary and Hiring Data Partner With Us Become a Career Center Partner Our Employer Partners Meet the Team</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Career Center</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careercenter.tamu.edu/employers/recruiting/career-fair-tips" target="_blank" rel="noreferrer">Career Fair Tips - Texas A&amp;M Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers Employers Engage Students Recruiting Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internship...</h4>
+        <span class="score">Score 20</span>
+      </div>
+      <p class="snippet">Employers Employers Engage Students Recruiting Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internships Recruiting Policies Recruiting Unique Populations Salary and Hiring Data Partner With Us Partner With Us Become a Career Center Partner Our Employer Partners ...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Career Center</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careercenter.tamu.edu/employers/recruiting/career-fair-tips" target="_blank" rel="noreferrer">Career Fair Tips - Texas A&amp;M Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers Employers Engage Students Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internships Recruitin...</h4>
+        <span class="score">Score 20</span>
+      </div>
+      <p class="snippet">Employers. Employers Employers Engage Students Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internships Recruiting Policies Recruiting Unique Populations Salary and Hiring Data Partner With Us Become a Career Center Partner Our Employer Partners Meet the Team</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Career Center</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careercenter.tamu.edu/employers/recruiting/career-fair-tips#main" target="_blank" rel="noreferrer">Career Fair Tips - Texas A&amp;M Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers Employers Engage Students Recruiting Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internship...</h4>
+        <span class="score">Score 20</span>
+      </div>
+      <p class="snippet">Employers Employers Engage Students Recruiting Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internships Recruiting Policies Recruiting Unique Populations Salary and Hiring Data Partner With Us Partner With Us Become a Career Center Partner Our Employer Partners ...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Career Center</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careercenter.tamu.edu/employers/recruiting/career-fair-tips#main" target="_blank" rel="noreferrer">Career Fair Tips - Texas A&amp;M Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers Employers Engage Students Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internships Recruitin...</h4>
+        <span class="score">Score 20</span>
+      </div>
+      <p class="snippet">Employers. Employers Employers Engage Students Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internships Recruiting Policies Recruiting Unique Populations Salary and Hiring Data Partner With Us Become a Career Center Partner Our Employer Partners Meet the Team</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Career Center</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careercenter.tamu.edu/events/career-fairs/arts-sciences-career-fair/employer-information" target="_blank" rel="noreferrer">Employer Information - Texas A&amp;M Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers Employers Engage Students Recruiting Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internship...</h4>
+        <span class="score">Score 20</span>
+      </div>
+      <p class="snippet">Employers Employers Engage Students Recruiting Recruiting Career Fair Tips HireAggies How-To Post Jobs and Internships Recruiting Policies Recruiting Unique Populations Salary and Hiring Data Partner With Us Partner With Us Become a Career Center Partner Our Employer Partners ...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Career Center</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careercenter.tamu.edu/events/career-fairs/arts-sciences-career-fair/employer-information" target="_blank" rel="noreferrer">Employer Information - Texas A&amp;M Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Event InformationDate: February 3, 2026 10:00am - 4:00pmLocation: MSC 2300 Bethancourt BallroomThe Arts &amp; Sciences Ca...</h4>
+        <span class="score">Score 15</span>
+      </div>
+      <p class="snippet">Event Information. Event InformationDate: February 3, 2026 10:00am - 4:00pmLocation: MSC 2300 Bethancourt BallroomThe Arts &amp; Sciences Career Fair allows your organization to:Find engaged and motivated students from over 130 different majorsFill internships and full-time employ...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>February 3, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careercenter.tamu.edu/events/career-fairs/arts-sciences-career-fair/employer-information" target="_blank" rel="noreferrer">Employer Information - Texas A&amp;M Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Welcome to the Spring 2026 Arts &amp; Sciences Career Fair!.</h4>
+        <span class="score">Score 14</span>
+      </div>
+      <p class="snippet">Welcome to the Spring 2026 Arts &amp; Sciences Career Fair!. Welcome to the Spring 2026 Arts &amp; Sciences Career Fair! February 3 | 10:00 AM - 4:00 PM | @ MSC 2300 EMPLOYER INFORMATION STUDENT INFORMATION</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>February 3</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careercenter.tamu.edu/events/career-fairs/arts-sciences-career-fair" target="_blank" rel="noreferrer">Arts &amp; Sciences Career Fair - Texas A&amp;M Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employers</span></div>
+    </article>
+  
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="university-of-california-irvine">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of California, Irvine</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>8 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Spring Health Sciences Graduate School Expo Registration full Week 4 – Tuesday, April 21st 11:00 AM – 2:00 PM Outdoor...</h4>
+        <span class="score">Score 12</span>
+      </div>
+      <p class="snippet">Spring Health Sciences Graduate School Expo Registration full Week 4 – Tuesday, April 21st 11:00 AM – 2:00 PM Outdoors on Ring Road</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>April 21</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.uci.edu/recruiters/on-campus-recruiting/career-fairs/%20" target="_blank" rel="noreferrer">Career Fairs - UC Irvine Division of Career Pathways</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">graduate</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Spring Health Sciences Graduate School Expo Registration full Week 4 – Tuesday, April 21st 11:00 AM – 2:00 PM Outdoor...</h4>
+        <span class="score">Score 12</span>
+      </div>
+      <p class="snippet">Spring Health Sciences Graduate School Expo Registration full Week 4 – Tuesday, April 21st 11:00 AM – 2:00 PM Outdoors on Ring Road</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>April 21</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.uci.edu/recruiters/on-campus-recruiting/career-fairs/" target="_blank" rel="noreferrer">Career Fairs - UC Irvine Division of Career Pathways</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">graduate</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Fall Career &amp; Internship Fair (Featuring EngiTECH) Week 2 – Thursday, Oct 9th I 10am-2pm I Indoors in the UCI Student...</h4>
+        <span class="score">Score 12</span>
+      </div>
+      <p class="snippet">Fall Career &amp; Internship Fair (Featuring EngiTECH) Week 2 – Thursday, Oct 9th I 10am-2pm I Indoors in the UCI Student Center Register Here to Attend</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>Oct 9</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.uci.edu/undergraduate/find-a-job/career-fairs/" target="_blank" rel="noreferrer">Career Fairs - UC Irvine Division of Career Pathways</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Fall Graduate School Expo Week 6 – Thursday, Nov 6th I 10am-2pm I Outdoors on Ring Road Register Here to Attend</h4>
+        <span class="score">Score 12</span>
+      </div>
+      <p class="snippet">Fall Graduate School Expo Week 6 – Thursday, Nov 6th I 10am-2pm I Outdoors on Ring Road Register Here to Attend</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>Nov 6</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.uci.edu/undergraduate/find-a-job/career-fairs/" target="_blank" rel="noreferrer">Career Fairs - UC Irvine Division of Career Pathways</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">graduate</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Winter Career &amp; Internship Fair Week 4 – Wednesday, Jan 28th I 10am-2pm I Indoors in the UCI Student Center Register ...</h4>
+        <span class="score">Score 12</span>
+      </div>
+      <p class="snippet">Winter Career &amp; Internship Fair Week 4 – Wednesday, Jan 28th I 10am-2pm I Indoors in the UCI Student Center Register Here to Attend</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>Jan 28</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.uci.edu/undergraduate/find-a-job/career-fairs/" target="_blank" rel="noreferrer">Career Fairs - UC Irvine Division of Career Pathways</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Spring Career &amp; Internship Fair Week 2 – Thursday, April 9th I 10am-2pm I Indoors in the UCI Student Center Register ...</h4>
+        <span class="score">Score 12</span>
+      </div>
+      <p class="snippet">Spring Career &amp; Internship Fair Week 2 – Thursday, April 9th I 10am-2pm I Indoors in the UCI Student Center Register Here to Attend</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>April 9</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.uci.edu/undergraduate/find-a-job/career-fairs/" target="_blank" rel="noreferrer">Career Fairs - UC Irvine Division of Career Pathways</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Spring Health Sciences Graduate School Expo Week 4 – Tuesday, April 21st I 11am-2pm I Outdoors on Ring Road Register ...</h4>
+        <span class="score">Score 12</span>
+      </div>
+      <p class="snippet">Spring Health Sciences Graduate School Expo Week 4 – Tuesday, April 21st I 11am-2pm I Outdoors on Ring Road Register Here to Attend</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>April 21</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.uci.edu/undergraduate/find-a-job/career-fairs/" target="_blank" rel="noreferrer">Career Fairs - UC Irvine Division of Career Pathways</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">graduate</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Spring Career Fair Registration deadline: March 13, 2026 Week 2 – Thursday, April 9th 10:00 AM – 2:00 PM Indoors in t...</h4>
+        <span class="score">Score 10</span>
+      </div>
+      <p class="snippet">Spring Career Fair Registration deadline: March 13, 2026 Week 2 – Thursday, April 9th 10:00 AM – 2:00 PM Indoors in the UCI Student Center</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>March 13, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.uci.edu/recruiters/on-campus-recruiting/career-fairs/%20" target="_blank" rel="noreferrer">Career Fairs - UC Irvine Division of Career Pathways</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="muted">No keyword hits recorded</span></div>
+    </article>
+  
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://career.uci.edu/employers/" target="_blank" rel="noreferrer">https://career.uci.edu/employers/</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="university-of-california-riverside">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of California, Riverside</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>8 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Spring &amp; Internship Career Fair.</h4>
+        <span class="score">Score 16</span>
+      </div>
+      <p class="snippet">Spring &amp; Internship Career Fair. Spring Career Fair Dates/Teams/Location Spring &amp; Internship Career Fair April 1st, 2026 | 11AM-3PM | HUB 302 Health Professions Information Day April 15th, 2026 | 11AM - 2PM | Rivera Walkway Just In Time Fair [Hybrid] In-Person: May 6th, 2026 |...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>April 1</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Career Center</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careers.ucr.edu/employers/career-fairs" target="_blank" rel="noreferrer">Career Fairs | Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Spring &amp; Internship Career Fair.</h4>
+        <span class="score">Score 16</span>
+      </div>
+      <p class="snippet">Spring &amp; Internship Career Fair. Spring Career Fair Dates/Teams/Location Spring &amp; Internship Career Fair April 1st, 2026 | 11AM-3PM | HUB 302 Health Professions Information Day April 15th, 2026 | 11AM - 2PM | Rivera Walkway Just In Time Fair [Hybrid] In-Person: May 6th, 2026 |...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>April 1</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Career Center</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careers.ucr.edu/employers/career-fairs#spring-career-fair-datesteamsl" target="_blank" rel="noreferrer">Career Fairs | Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Engineering &amp; Technology Career Fair.</h4>
+        <span class="score">Score 15</span>
+      </div>
+      <p class="snippet">Engineering &amp; Technology Career Fair. Winter Quarter Fair Dates/Times/Location Engineering &amp; Technology Career Fair January 28th, 2026 | 11AM-3PM | HUB 302 Education, Government, &amp; Non-Profit Career Fair February 20, 2026 | 2:30PM - 5:30PM | HUB 302</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>January 28</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careers.ucr.edu/employers/career-fairs" target="_blank" rel="noreferrer">Career Fairs | Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">engineering</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Engineering &amp; Technology Career Fair.</h4>
+        <span class="score">Score 15</span>
+      </div>
+      <p class="snippet">Engineering &amp; Technology Career Fair. Winter Quarter Fair Dates/Times/Location Engineering &amp; Technology Career Fair January 28th, 2026 | 11AM-3PM | HUB 302 Education, Government, &amp; Non-Profit Career Fair February 20, 2026 | 2:30PM - 5:30PM | HUB 302</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>January 28</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careers.ucr.edu/employers/career-fairs#spring-career-fair-datesteamsl" target="_blank" rel="noreferrer">Career Fairs | Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">engineering</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Secure your company&#39;s future by connecting directly with the brightest minds in engineering and technology at the UC ...</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Secure your company&#39;s future by connecting directly with the brightest minds in engineering and technology at the UC Riverside (UCR) Engineering &amp; Technology Career Expo. Increase your company&#39;s presence and visibility among a key demographic of future innovators and leaders.</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careers.ucr.edu/employers/career-fairs" target="_blank" rel="noreferrer">Career Fairs | Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">engineering</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Secure your company&#39;s future by connecting directly with the brightest minds in engineering and technology at the UC ...</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Secure your company&#39;s future by connecting directly with the brightest minds in engineering and technology at the UC Riverside (UCR) Engineering &amp; Technology Career Expo. Increase your company&#39;s presence and visibility among a key demographic of future innovators and leaders.</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careers.ucr.edu/employers/career-fairs#spring-career-fair-datesteamsl" target="_blank" rel="noreferrer">Career Fairs | Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">engineering</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Spring &amp; Internship Career Fair.</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Spring &amp; Internship Career Fair. Spring Career Fair Dates/Teams/Location Spring &amp; Internship Career Fair April 1st, 2026 | 11AM-3PM | HUB 302 Health Professions Information Day April 15th, 2026 | 11AM - 2PM | Rivera Walkway Just In Time Fair [Hybrid] In-Person: May 6th, 2026 |...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>April 1</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Career Center</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careers.ucr.edu/events/career-fairs" target="_blank" rel="noreferrer">Career Fairs | Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Spring &amp; Internship Career Fair.</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Spring &amp; Internship Career Fair. Spring Career Fair Dates/Teams/Location Spring &amp; Internship Career Fair April 1st, 2026 | 11AM-3PM | HUB 302 Health Professions Information Day April 15th, 2026 | 11AM - 2PM | Rivera Walkway Just In Time Fair [Hybrid] In-Person: May 6th, 2026 |...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>April 1</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Career Center</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careers.ucr.edu/events/career-fairs#spring-career-fair-datesteamsl" target="_blank" rel="noreferrer">Career Fairs | Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span></div>
+    </article>
+  
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="university-of-california-santa-barbara">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of California, Santa Barbara</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>8 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Fall Job + Internship Fair: Wednesday, October 22nd, 2025</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Fall Job + Internship Fair: Wednesday, October 22nd, 2025</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>October 22</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.ucsb.edu/employers" target="_blank" rel="noreferrer">Recruit UCSB Students | UC Santa Barbara Career Services</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Spring Job + Internship Fair: Tuesday, April 28th, 2026</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Spring Job + Internship Fair: Tuesday, April 28th, 2026</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>April 28</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.ucsb.edu/employers" target="_blank" rel="noreferrer">Recruit UCSB Students | UC Santa Barbara Career Services</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Fall Job + Internship Fair: Wednesday, October 22nd, 2025</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Fall Job + Internship Fair: Wednesday, October 22nd, 2025</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>October 22</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.ucsb.edu/employers#main-content" target="_blank" rel="noreferrer">Recruit UCSB Students | UC Santa Barbara Career Services</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Spring Job + Internship Fair: Tuesday, April 28th, 2026</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Spring Job + Internship Fair: Tuesday, April 28th, 2026</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>April 28</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.ucsb.edu/employers#main-content" target="_blank" rel="noreferrer">Recruit UCSB Students | UC Santa Barbara Career Services</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Fall Job + Internship Fair: Wednesday, October 22nd, 2025</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Fall Job + Internship Fair: Wednesday, October 22nd, 2025</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>October 22</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.ucsb.edu/employers#" target="_blank" rel="noreferrer">Recruit UCSB Students | UC Santa Barbara Career Services</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Spring Job + Internship Fair: Tuesday, April 28th, 2026</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Spring Job + Internship Fair: Tuesday, April 28th, 2026</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>April 28</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.ucsb.edu/employers#" target="_blank" rel="noreferrer">Recruit UCSB Students | UC Santa Barbara Career Services</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Fall Job + Internship Fair: Wednesday, October 22nd, 2025</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Fall Job + Internship Fair: Wednesday, October 22nd, 2025</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>October 22</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.ucsb.edu/employers#collapse-7783" target="_blank" rel="noreferrer">Recruit UCSB Students | UC Santa Barbara Career Services</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Spring Job + Internship Fair: Tuesday, April 28th, 2026</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Spring Job + Internship Fair: Tuesday, April 28th, 2026</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>April 28</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.ucsb.edu/employers#collapse-7783" target="_blank" rel="noreferrer">Recruit UCSB Students | UC Santa Barbara Career Services</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="university-of-houston">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of Houston</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>8 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>COLLEGE BASED CAREER CENTER AND DEPARTMENT CAREER FAIRS– Spring 2026 Career Fair Date Audience Bauer College of Busin...</h4>
+        <span class="score">Score 16</span>
+      </div>
+      <p class="snippet">COLLEGE BASED CAREER CENTER AND DEPARTMENT CAREER FAIRS– Spring 2026. COLLEGE BASED CAREER CENTER AND DEPARTMENT CAREER FAIRS– Spring 2026 Career Fair Date Audience Bauer College of Business February 13, 2026 College of Business Majors only Cullen College of Engineering Career...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>February 13, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>CAREER CENTER</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.uh.edu/ucs/careerfairs/#employer" target="_blank" rel="noreferrer">UH Career Fairs</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">engineering</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>COLLEGE BASED CAREER CENTER AND DEPARTMENT CAREER FAIRS– Spring 2026 Career Fair Date Audience Bauer College of Busin...</h4>
+        <span class="score">Score 16</span>
+      </div>
+      <p class="snippet">COLLEGE BASED CAREER CENTER AND DEPARTMENT CAREER FAIRS– Spring 2026. COLLEGE BASED CAREER CENTER AND DEPARTMENT CAREER FAIRS– Spring 2026 Career Fair Date Audience Bauer College of Business February 13, 2026 College of Business Majors only Cullen College of Engineering Career...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>February 13, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>CAREER CENTER</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.uh.edu/ucs/careerfairs/index.php#employer" target="_blank" rel="noreferrer">UH Career Fairs</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">engineering</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Cullen College of Engineering Career FairEngineering and Technology Career Fair February 11-12, 2026 College of Engin...</h4>
+        <span class="score">Score 15</span>
+      </div>
+      <p class="snippet">Cullen College of Engineering Career FairEngineering and Technology Career Fair February 11-12, 2026 College of Engineering majors only</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>February 11</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.uh.edu/ucs/careerfairs/#employer" target="_blank" rel="noreferrer">UH Career Fairs</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">engineering</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Cullen College of Engineering Career FairEngineering and Technology Career Fair February 11-12, 2026 College of Engin...</h4>
+        <span class="score">Score 15</span>
+      </div>
+      <p class="snippet">Cullen College of Engineering Career FairEngineering and Technology Career Fair February 11-12, 2026 College of Engineering majors only</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>February 11</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.uh.edu/ucs/careerfairs/index.php#employer" target="_blank" rel="noreferrer">UH Career Fairs</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">engineering</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>COLLEGE BASED CAREER CENTER AND DEPARTMENT CAREER FAIRS– Spring 2026 Career Fair Date Audience Bauer College of Busin...</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">COLLEGE BASED CAREER CENTER AND DEPARTMENT CAREER FAIRS– Spring 2026. COLLEGE BASED CAREER CENTER AND DEPARTMENT CAREER FAIRS– Spring 2026 Career Fair Date Audience Bauer College of Business February 13, 2026 College of Business Majors only Cullen College of Engineering Career...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>February 13, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>CAREER CENTER</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.uh.edu/ucs/careerfairs/" target="_blank" rel="noreferrer">UH Career Fairs</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">engineering</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Spring 2026 Career Fairs Tues, Jan 13: Alumni Career Mixer Fri, Jan 16: Winter Resource Fair Thur, Feb 19: STEM Caree...</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Spring 2026 Career Fairs. Spring 2026 Career Fairs Tues, Jan 13: Alumni Career Mixer Fri, Jan 16: Winter Resource Fair Thur, Feb 19: STEM Career Fair Wed, Feb 25: Architecture + Design Career Fair (and Networking Reception the evening before) Thur, Mar 26: Communication and Ma...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>Jan 13</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.uh.edu/ucs/careerfairs/#employer" target="_blank" rel="noreferrer">UH Career Fairs</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Tues, Jan 13: Alumni Career Mixer Fri, Jan 16: Winter Resource Fair Thur, Feb 19: STEM Career Fair Wed, Feb 25: Archi...</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Tues, Jan 13: Alumni Career Mixer Fri, Jan 16: Winter Resource Fair Thur, Feb 19: STEM Career Fair Wed, Feb 25: Architecture + Design Career Fair (and Networking Reception the evening before) Thur, Mar 26: Communication and Marketing Career Mixer Thur, Apr 7: Texas Job Fair Th...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>Jan 13</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.uh.edu/ucs/careerfairs/#employer" target="_blank" rel="noreferrer">UH Career Fairs</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Wed, Feb 25: Architecture + Design Career Fair (and Networking Reception the evening before)</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Wed, Feb 25: Architecture + Design Career Fair (and Networking Reception the evening before)</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>Feb 25</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.uh.edu/ucs/careerfairs/#employer" target="_blank" rel="noreferrer">UH Career Fairs</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employer-page</span></div>
+    </article>
+  
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="boston-college">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Boston College</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>7 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Therefore, selection of career fair employers is based on current job market conditions and student demands.</h4>
+        <span class="score">Score 20</span>
+      </div>
+      <p class="snippet">What is the process for approving my employer registration?. What is the process for approving my employer registration? We are committed to offering our students a diverse mix of job and internship opportunities from a variety of industries. Therefore, selection of career fai...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Career Center</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.bc.edu/content/bc-web/offices/studentaffairs/sites/careers/sites/employers/recruit-at-bc/career-fairs.html" target="_blank" rel="noreferrer">Career Fairs and Networking Events - Career Center - Boston College</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>SEC / ACC Virtual Career Fair Wednesday, April 2, 2026 Virtual Employer registration will be available as the event a...</h4>
+        <span class="score">Score 18</span>
+      </div>
+      <p class="snippet">SEC / ACC Virtual Career Fair Wednesday, April 2, 2026 Virtual Employer registration will be available as the event approaches.</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>April 2, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Virtual</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.bc.edu/content/bc-web/offices/studentaffairs/sites/careers/sites/employers/recruit-at-bc/career-fairs.html" target="_blank" rel="noreferrer">Career Fairs and Networking Events - Career Center - Boston College</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Just In Time Virtual Career Fair Friday, May 1, 2026 Virtual Registration is now open on Handshake.</h4>
+        <span class="score">Score 14</span>
+      </div>
+      <p class="snippet">Just In Time Virtual Career Fair Friday, May 1, 2026 Virtual Registration is now open on Handshake.</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>May 1, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Virtual</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.bc.edu/content/bc-web/offices/studentaffairs/sites/careers/sites/employers/recruit-at-bc/career-fairs.html" target="_blank" rel="noreferrer">Career Fairs and Networking Events - Career Center - Boston College</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>SEC / ACC Virtual Career Fair Wednesday, April 2, 2026 Virtual Student registration will be available on Handshake as...</h4>
+        <span class="score">Score 11</span>
+      </div>
+      <p class="snippet">SEC / ACC Virtual Career Fair Wednesday, April 2, 2026 Virtual Student registration will be available on Handshake as the event approaches.</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>April 2, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Virtual</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.bc.edu/content/bc-web/offices/studentaffairs/sites/careers/connect/career-fairs.html" target="_blank" rel="noreferrer">Career Fairs - Career Center - Boston College</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="muted">No keyword hits recorded</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Just In Time Virtual Career Fair Friday, May 1, 2026 Virtual Registration is now open on Handshake.</h4>
+        <span class="score">Score 11</span>
+      </div>
+      <p class="snippet">Just In Time Virtual Career Fair Friday, May 1, 2026 Virtual Registration is now open on Handshake.</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>May 1, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Virtual</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.bc.edu/content/bc-web/offices/studentaffairs/sites/careers/connect/career-fairs.html" target="_blank" rel="noreferrer">Career Fairs - Career Center - Boston College</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="muted">No keyword hits recorded</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Business &amp; Technology Career Fair Friday, September 12, 2025 11:00 a.m.–3:00 p.m.</h4>
+        <span class="score">Score 10</span>
+      </div>
+      <p class="snippet">Business &amp; Technology Career Fair Friday, September 12, 2025 11:00 a.m.–3:00 p.m. ET On campus at Conte Forum This event has now passed.</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>September 12, 2025</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.bc.edu/content/bc-web/offices/studentaffairs/sites/careers/connect/career-fairs.html" target="_blank" rel="noreferrer">Career Fairs - Career Center - Boston College</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="muted">No keyword hits recorded</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Social Change, Policy &amp; Nonprofit Networking Event Thursday, October 23, 2025 On campus at Corcoran Commons This even...</h4>
+        <span class="score">Score 10</span>
+      </div>
+      <p class="snippet">Social Change, Policy &amp; Nonprofit Networking Event Thursday, October 23, 2025 On campus at Corcoran Commons This event has now passed.</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>October 23, 2025</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.bc.edu/content/bc-web/offices/studentaffairs/sites/careers/connect/career-fairs.html" target="_blank" rel="noreferrer">Career Fairs - Career Center - Boston College</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="muted">No keyword hits recorded</span></div>
+    </article>
+  
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="drexel-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Drexel University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>7 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>This Handshake help article on How to Set a Schedule for a Virtual Fair can help guide you through the process.</h4>
+        <span class="score">Score 17</span>
+      </div>
+      <p class="snippet">Up to 100 representatives per organization can attend, and each representative will be able to create their own customized schedule. Employers must create their schedules before March 27, 2026, the week student registration opens. See the cancellation and refund policy below f...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>March 27, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Virtual</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://drexel.edu/scdc/about/events/career-fairs/health-professions-career-fair" target="_blank" rel="noreferrer">Nursing Health Professions Career Fair</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employers</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Calendar of Events March 18, 2026 3:00 — 4:00 PM Virtual Pre-Law or Graduate School Drop-In Hours zoom-register on Ha...</h4>
+        <span class="score">Score 11</span>
+      </div>
+      <p class="snippet">Calendar of Events. Calendar of Events March 18, 2026 3:00 — 4:00 PM Virtual Pre-Law or Graduate School Drop-In Hours zoom-register on Handshake March 30, 2026 1:00 — 2:00 PM Graduate Students Resume Dropins Office of Graduate Studies 3141 Chestnut Street Main Building, Suite ...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>March 18, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Virtual</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://drexel.edu/scdc/" target="_blank" rel="noreferrer">Steinbright Career Development Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">graduate</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Virtual Nursing &amp; Health Professions Career Fair Tuesday, April 7, from 4 p.m.</h4>
+        <span class="score">Score 11</span>
+      </div>
+      <p class="snippet">Virtual Nursing &amp; Health Professions Career Fair Tuesday, April 7, from 4 p.m. to 7 p.m. ET</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>April 7</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Virtual</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://drexel.edu/scdc/about/events/career-fairs/health-professions-career-fair" target="_blank" rel="noreferrer">Nursing Health Professions Career Fair</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="muted">No keyword hits recorded</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Career Fairs at Drexel From our Fall and Spring Career Fairs to the Engineering &amp; Technology Career Fair and more, th...</h4>
+        <span class="score">Score 10</span>
+      </div>
+      <p class="snippet">Career Fairs at Drexel From our Fall and Spring Career Fairs to the Engineering &amp; Technology Career Fair and more, there are plenty of opportunities for students to connect with professionals.</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://drexel.edu/scdc/about/events/career-fairs" target="_blank" rel="noreferrer">Career Fairs</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">engineering</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Nursing &amp; Health Professions Career Fair: April 7, 4 to 7 p.m.</h4>
+        <span class="score">Score 10</span>
+      </div>
+      <p class="snippet">Nursing &amp; Health Professions Career Fair: April 7, 4 to 7 p.m.</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>April 7</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://drexel.edu/scdc/about/events/career-fairs" target="_blank" rel="noreferrer">Career Fairs</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="muted">No keyword hits recorded</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Spring Career Fair: April 14, 1 to 5 p.m.</h4>
+        <span class="score">Score 10</span>
+      </div>
+      <p class="snippet">Spring Career Fair: April 14, 1 to 5 p.m.</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>April 14</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://drexel.edu/scdc/about/events/career-fairs" target="_blank" rel="noreferrer">Career Fairs</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="muted">No keyword hits recorded</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Engineering &amp; Technology Career Fair: January/February</h4>
+        <span class="score">Score 10</span>
+      </div>
+      <p class="snippet">Engineering &amp; Technology Career Fair: January/February</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://drexel.edu/scdc/about/events/career-fairs" target="_blank" rel="noreferrer">Career Fairs</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">engineering</span></div>
+    </article>
+  
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="university-of-illinois-chicago">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of Illinois Chicago</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>7 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Career Fairs 2026 Copy link Employers Register Here for our UIC Spring Career &amp; Internship Fair – Employer Registrati...</h4>
+        <span class="score">Score 22</span>
+      </div>
+      <p class="snippet">Career Fairs 2026. Career Fairs 2026 Copy link Employers Register Here for our UIC Spring Career &amp; Internship Fair – Employer Registration which will take place on Tuesday, March 12, 2026, from 11:00 a.m. – 4:00 p.m. in Student Center East, Illinois Room at 750 South Halsted S...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>March 12, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Room at</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.uic.edu/employers/career-job-fairs-information-employers/" target="_blank" rel="noreferrer">Career Fair Information for Employers | Career Services | University of Illinois Chicago</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers Register Here for our UIC Spring Career &amp; Internship Fair – Employer Registration which will take place on ...</h4>
+        <span class="score">Score 22</span>
+      </div>
+      <p class="snippet">Employers Register Here for our UIC Spring Career &amp; Internship Fair – Employer Registration which will take place on Tuesday, March 12, 2026, from 11:00 a.m. – 4:00 p.m. in Student Center East, Illinois Room at 750 South Halsted St, Chicago, IL 60607.</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>March 12, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Room at</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.uic.edu/employers/career-job-fairs-information-employers/" target="_blank" rel="noreferrer">Career Fair Information for Employers | Career Services | University of Illinois Chicago</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Career Fairs 2026 Copy link Employers Register Here for our UIC Spring Career &amp; Internship Fair – Employer Registrati...</h4>
+        <span class="score">Score 22</span>
+      </div>
+      <p class="snippet">Career Fairs 2026. Career Fairs 2026 Copy link Employers Register Here for our UIC Spring Career &amp; Internship Fair – Employer Registration which will take place on Tuesday, March 12, 2026, from 11:00 a.m. – 4:00 p.m. in Student Center East, Illinois Room at 750 South Halsted S...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>March 12, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Room at</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.uic.edu/employers/career-job-fairs-information-employers/#menu-secondary" target="_blank" rel="noreferrer">Career Fair Information for Employers | Career Services | University of Illinois Chicago</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers Register Here for our UIC Spring Career &amp; Internship Fair – Employer Registration which will take place on ...</h4>
+        <span class="score">Score 22</span>
+      </div>
+      <p class="snippet">Employers Register Here for our UIC Spring Career &amp; Internship Fair – Employer Registration which will take place on Tuesday, March 12, 2026, from 11:00 a.m. – 4:00 p.m. in Student Center East, Illinois Room at 750 South Halsted St, Chicago, IL 60607.</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>March 12, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Room at</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.uic.edu/employers/career-job-fairs-information-employers/#menu-secondary" target="_blank" rel="noreferrer">Career Fair Information for Employers | Career Services | University of Illinois Chicago</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Career Fairs 2026 Copy link Employers Register Here for our UIC Spring Career &amp; Internship Fair – Employer Registrati...</h4>
+        <span class="score">Score 22</span>
+      </div>
+      <p class="snippet">Career Fairs 2026. Career Fairs 2026 Copy link Employers Register Here for our UIC Spring Career &amp; Internship Fair – Employer Registration which will take place on Tuesday, March 12, 2026, from 11:00 a.m. – 4:00 p.m. in Student Center East, Illinois Room at 750 South Halsted S...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>March 12, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Room at</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.uic.edu/employers/career-job-fairs-information-employers/#red-main" target="_blank" rel="noreferrer">Career Fair Information for Employers | Career Services | University of Illinois Chicago</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers Register Here for our UIC Spring Career &amp; Internship Fair – Employer Registration which will take place on ...</h4>
+        <span class="score">Score 22</span>
+      </div>
+      <p class="snippet">Employers Register Here for our UIC Spring Career &amp; Internship Fair – Employer Registration which will take place on Tuesday, March 12, 2026, from 11:00 a.m. – 4:00 p.m. in Student Center East, Illinois Room at 750 South Halsted St, Chicago, IL 60607.</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>March 12, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Room at</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.uic.edu/employers/career-job-fairs-information-employers/#red-main" target="_blank" rel="noreferrer">Career Fair Information for Employers | Career Services | University of Illinois Chicago</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Spring Internship &amp; Career Fair This career fair hosts employers from various industries including technology, engine...</h4>
+        <span class="score">Score 18</span>
+      </div>
+      <p class="snippet">Spring Internship &amp; Career Fair This career fair hosts employers from various industries including technology, engineering, government, business, healthcare and pharmaceuticals, and non-profit. The fair is open to UIC students and alumni of any major, and frequently features f...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.uic.edu/uic-career-fair-descriptions/" target="_blank" rel="noreferrer">UIC Career Fair Descriptions | Career Services | University of Illinois Chicago</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">engineering</span><span class="tag">internship</span><span class="tag">employers</span></div>
+    </article>
+  
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="university-of-pennsylvania">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of Pennsylvania</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>7 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>BONUS FREE REGISTRATION FOR THE VIRTUAL CAREER FAIR: Employers whose registration is approved for the STEM &amp; Sustaina...</h4>
+        <span class="score">Score 22</span>
+      </div>
+      <p class="snippet">BONUS FREE REGISTRATION FOR THE VIRTUAL CAREER FAIR: Employers whose registration is approved for the STEM &amp; Sustainability Career Fair can register for free for the Virtual All-Industries Career Fair on Thursday, February 19th. This gives employers access to dedicated, 10-min...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>February 19</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>VIRTUAL</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.upenn.edu/career-fairs/stem2026fair/" target="_blank" rel="noreferrer">STEM Career Fair: Employers – Career Services | University of Pennsylvania</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">sustainability</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers will receive a link to resumes from students and postdocs registered for this career fair one week prior to...</h4>
+        <span class="score">Score 19</span>
+      </div>
+      <p class="snippet">REVIEW RESUME BOOKS: We will create resume books for this year’s event, broken down by degree and whether students/postdocs are seeking internships or full-time opportunities. Employers will receive a link to resumes from students and postdocs registered for this career fair o...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.upenn.edu/career-fairs/stem2026fair/" target="_blank" rel="noreferrer">STEM Career Fair: Employers – Career Services | University of Pennsylvania</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>We encourage employers to register before the end of January 2026 to be included in all marketing communications to s...</h4>
+        <span class="score">Score 19</span>
+      </div>
+      <p class="snippet">We encourage employers to register before the end of January 2026 to be included in all marketing communications to students and postdocs about this career fair. The registration deadline is on Friday, January 30th at 12:00PM EST.</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>January 20</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.upenn.edu/career-fairs/stem2026fair/" target="_blank" rel="noreferrer">STEM Career Fair: Employers – Career Services | University of Pennsylvania</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Our virtual career fair will provide the opportunity to speak informally with highly-qualified students and postdocs ...</h4>
+        <span class="score">Score 16</span>
+      </div>
+      <p class="snippet">Our virtual career fair will provide the opportunity to speak informally with highly-qualified students and postdocs interested in learning about your organization and collect resumes from interested candidates. The fair is attended by students in all of Penn’s undergraduate p...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>virtual</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="http://careerservices.upenn.edu/2025-employer-facing-all-industry-virtual-career-fair" target="_blank" rel="noreferrer">2025 Employer Facing | All Industry Virtual Career Fair – Career Services | University of Pennsylvania</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">graduate</span><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>This career fair is open to all industries including opportunities for those interested in consulting, communications...</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">This career fair is open to all industries including opportunities for those interested in consulting, communications, consumer products, education, entertainment, finance, government, journalism, manufacturing, marketing, media, non-profits, research, retail, and more.</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="http://careerservices.upenn.edu/2025-employer-facing-all-industry-virtual-career-fair" target="_blank" rel="noreferrer">2025 Employer Facing | All Industry Virtual Career Fair – Career Services | University of Pennsylvania</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">manufacturing</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Attn: Lashae Wright, STEM &amp; Sustainability Career Fair 2026, Suite 307Houston HallUniversity of Pennsylvania3417 Spru...</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Attn: Lashae Wright, STEM &amp; Sustainability Career Fair 2026, Suite 307Houston HallUniversity of Pennsylvania3417 Spruce StreetPhiladelphia, PA 19104</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.upenn.edu/career-fairs/stem2026fair/" target="_blank" rel="noreferrer">STEM Career Fair: Employers – Career Services | University of Pennsylvania</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">sustainability</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>The eight Ivy League schools come together to produce a unique and inspiring career fair that provides companies unpa...</h4>
+        <span class="score">Score 10</span>
+      </div>
+      <p class="snippet">The eight Ivy League schools come together to produce a unique and inspiring career fair that provides companies unparalleled access to students who have the skills and knowledge to address the complex sustainability and climate challenges of our global economy.</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careerservices.upenn.edu/career-fairs/" target="_blank" rel="noreferrer">Career Fairs – Career Services | University of Pennsylvania</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">sustainability</span></div>
+    </article>
+  
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://careerservices.upenn.edu/employers/" target="_blank" rel="noreferrer">https://careerservices.upenn.edu/employers/</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="massachusetts-institute-of-technology">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Massachusetts Institute of Technology</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>6 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>To get the most of your career fair experience please see the following resources:</h4>
+        <span class="score">Score 19</span>
+      </div>
+      <p class="snippet">Career Fairs are just one type of recruiting activity for you to connect with employers, explore industries and learn about potential internship and job opportunities. To get the most of your career fair experience please see the following resources:</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://capd.mit.edu/channels/attend-a-career-fair/?utc_src_link=foremployersnav" target="_blank" rel="noreferrer">Career fairs – Career Advising &amp; Professional Development | MIT</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>MIT career fairs (Fall Career Fair and Spring Career Night) are open to MIT undergraduates, graduate students, postdo...</h4>
+        <span class="score">Score 19</span>
+      </div>
+      <p class="snippet">MIT career fairs (Fall Career Fair and Spring Career Night) are open to MIT undergraduates, graduate students, postdocs, and alumni. This means a event with many attendees all wanting to interface with employers, and as busy doctoral and postdoctoral scholars, …</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://capd.mit.edu/channels/attend-a-career-fair/?utc_src_link=foremployersnav" target="_blank" rel="noreferrer">Career fairs – Career Advising &amp; Professional Development | MIT</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">graduate</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>To get the most of your career fair experience please see the following resources:</h4>
+        <span class="score">Score 19</span>
+      </div>
+      <p class="snippet">Career Fairs are just one type of recruiting activity for you to connect with employers, explore industries and learn about potential internship and job opportunities. To get the most of your career fair experience please see the following resources:</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://capd.mit.edu/channels/attend-a-career-fair/?utc_src_link=foremployersnav#content" target="_blank" rel="noreferrer">Career fairs – Career Advising &amp; Professional Development | MIT</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>MIT career fairs (Fall Career Fair and Spring Career Night) are open to MIT undergraduates, graduate students, postdo...</h4>
+        <span class="score">Score 19</span>
+      </div>
+      <p class="snippet">MIT career fairs (Fall Career Fair and Spring Career Night) are open to MIT undergraduates, graduate students, postdocs, and alumni. This means a event with many attendees all wanting to interface with employers, and as busy doctoral and postdoctoral scholars, …</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://capd.mit.edu/channels/attend-a-career-fair/?utc_src_link=foremployersnav#content" target="_blank" rel="noreferrer">Career fairs – Career Advising &amp; Professional Development | MIT</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">graduate</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>To get the most of your career fair experience please see the following resources:</h4>
+        <span class="score">Score 19</span>
+      </div>
+      <p class="snippet">Career Fairs are just one type of recruiting activity for you to connect with employers, explore industries and learn about potential internship and job opportunities. To get the most of your career fair experience please see the following resources:</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://capd.mit.edu/channels/attend-a-career-fair/?utc_src_link=foremployersnav#main-nav-skipper" target="_blank" rel="noreferrer">Career fairs – Career Advising &amp; Professional Development | MIT</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>MIT career fairs (Fall Career Fair and Spring Career Night) are open to MIT undergraduates, graduate students, postdo...</h4>
+        <span class="score">Score 19</span>
+      </div>
+      <p class="snippet">MIT career fairs (Fall Career Fair and Spring Career Night) are open to MIT undergraduates, graduate students, postdocs, and alumni. This means a event with many attendees all wanting to interface with employers, and as busy doctoral and postdoctoral scholars, …</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://capd.mit.edu/channels/attend-a-career-fair/?utc_src_link=foremployersnav#main-nav-skipper" target="_blank" rel="noreferrer">Career fairs – Career Advising &amp; Professional Development | MIT</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">graduate</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="santa-clara-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Santa Clara University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>6 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>02/03/2026 - Winter Internship Fair - All Majors3-6 pm In-Person On Campus</h4>
+        <span class="score">Score 15</span>
+      </div>
+      <p class="snippet">02/03/2026 - Winter Internship Fair - All Majors3-6 pm | In-Person On Campus</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>02/03/2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.scu.edu/careercenter/employers/careerfairs/" target="_blank" rel="noreferrer">Career Fairs - Career Center - Santa Clara University</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>02/03/2026 - Winter Internship Fair - All Majors3-6 pm In-Person On Campus</h4>
+        <span class="score">Score 15</span>
+      </div>
+      <p class="snippet">02/03/2026 - Winter Internship Fair - All Majors3-6 pm | In-Person On Campus</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>02/03/2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.scu.edu/careercenter/employers/careerfairs/#content" target="_blank" rel="noreferrer">Career Fairs - Career Center - Santa Clara University</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>02/03/2026 - Winter Internship Fair - All Majors3-6 pm In-Person On Campus</h4>
+        <span class="score">Score 15</span>
+      </div>
+      <p class="snippet">02/03/2026 - Winter Internship Fair - All Majors3-6 pm | In-Person On Campus</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>02/03/2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.scu.edu/careercenter/employers/careerfairs/#" target="_blank" rel="noreferrer">Career Fairs - Career Center - Santa Clara University</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>04/09/2026 - Spring Career Fair - All Majors3-6 pm In-Person On Campus</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">04/09/2026 - Spring Career Fair - All Majors3-6 pm | In-Person On Campus</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>04/09/2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.scu.edu/careercenter/employers/careerfairs/" target="_blank" rel="noreferrer">Career Fairs - Career Center - Santa Clara University</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>04/09/2026 - Spring Career Fair - All Majors3-6 pm In-Person On Campus</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">04/09/2026 - Spring Career Fair - All Majors3-6 pm | In-Person On Campus</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>04/09/2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.scu.edu/careercenter/employers/careerfairs/#content" target="_blank" rel="noreferrer">Career Fairs - Career Center - Santa Clara University</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>04/09/2026 - Spring Career Fair - All Majors3-6 pm In-Person On Campus</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">04/09/2026 - Spring Career Fair - All Majors3-6 pm | In-Person On Campus</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>04/09/2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.scu.edu/careercenter/employers/careerfairs/#" target="_blank" rel="noreferrer">Career Fairs - Career Center - Santa Clara University</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employer-page</span></div>
+    </article>
+  
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="florida-state-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Florida State University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>5 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Serie...</h4>
+        <span class="score">Score 20</span>
+      </div>
+      <p class="snippet">Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Series More Job Fairs and Events Job Fair Standards and Guidelines Questions Build Your Brand Partner with the Career Center Plan Your Travel On-Campus Recruiting In...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Career Center</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.fsu.edu/employers/attend-a-career-fair" target="_blank" rel="noreferrer">Attend a Job Fair or Event | Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Serie...</h4>
+        <span class="score">Score 20</span>
+      </div>
+      <p class="snippet">Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Series More Job Fairs and Events Job Fair Standards and Guidelines Questions Build Your Brand Partner with the Career Center Plan Your Travel On-Campus Recruiting In...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Career Center</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.fsu.edu/employers/attend-a-career-fair#seminole-futures" target="_blank" rel="noreferrer">Attend a Job Fair or Event | Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Serie...</h4>
+        <span class="score">Score 20</span>
+      </div>
+      <p class="snippet">Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Series More Job Fairs and Events Job Fair Standards and Guidelines Questions Build Your Brand Partner with the Career Center Plan Your Travel On-Campus Recruiting In...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Career Center</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.fsu.edu/employers/attend-a-career-fair#more-job" target="_blank" rel="noreferrer">Attend a Job Fair or Event | Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Serie...</h4>
+        <span class="score">Score 20</span>
+      </div>
+      <p class="snippet">Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Series More Job Fairs and Events Job Fair Standards and Guidelines Questions Build Your Brand Partner with the Career Center Plan Your Travel On-Campus Recruiting In...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Career Center</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.fsu.edu/employers/attend-a-career-fair#content" target="_blank" rel="noreferrer">Attend a Job Fair or Event | Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Serie...</h4>
+        <span class="score">Score 20</span>
+      </div>
+      <p class="snippet">Employers Recruit FSU Students for Jobs and Internships Attend a Job Fair or Event Seminole Futures Recruitment Series More Job Fairs and Events Job Fair Standards and Guidelines Questions Build Your Brand Partner with the Career Center Plan Your Travel On-Campus Recruiting In...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Career Center</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.fsu.edu/employers/attend-a-career-fair#fsu-search" target="_blank" rel="noreferrer">Attend a Job Fair or Event | Career Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="university-of-utah">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of Utah</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>5 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Re...</h4>
+        <span class="score">Score 19</span>
+      </div>
+      <p class="snippet">Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Recruiting</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careers.utah.edu/employers/career-fairs/" target="_blank" rel="noreferrer">Recruit at Career Fairs – U Career Success</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Re...</h4>
+        <span class="score">Score 19</span>
+      </div>
+      <p class="snippet">Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Recruiting</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careers.utah.edu/employers/career-fairs/#main" target="_blank" rel="noreferrer">Recruit at Career Fairs – U Career Success</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Re...</h4>
+        <span class="score">Score 19</span>
+      </div>
+      <p class="snippet">Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Recruiting</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careers.utah.edu/employers/career-fairs/#meettheteam" target="_blank" rel="noreferrer">Recruit at Career Fairs – U Career Success</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Re...</h4>
+        <span class="score">Score 19</span>
+      </div>
+      <p class="snippet">Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Recruiting</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careers.utah.edu/employers/career-fairs/#back-to-top" target="_blank" rel="noreferrer">Recruit at Career Fairs – U Career Success</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Re...</h4>
+        <span class="score">Score 17</span>
+      </div>
+      <p class="snippet">Employers Employers Home Post a Job or Internship Starting an Internship Program Next-Level Engagement Career Fair Recruiting</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careers.utah.edu/employers/" target="_blank" rel="noreferrer">Recruiters &amp; Employers – U Career Success</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="university-of-washington">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of Washington</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>5 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Event: Career Fair 101: How to Prepare for a Fair.</h4>
+        <span class="score">Score 14</span>
+      </div>
+      <p class="snippet">Event: Career Fair 101: How to Prepare for a Fair. Apr 08 Event: Career Fair 101: How to Prepare for a Fair Wednesday, April 8, 2026 12:30pm - 1:20pm Wed, Apr 8 from 12:30pm - 1:20pm Virtual</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>Apr 08</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Virtual</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careers.uw.edu/events/student/?ctag%5B0%5D=workshops&amp;ctag%5B1%5D=employer-alumni-talks-panels&amp;ctag%5B2%5D=job-internship-fairs&amp;ctag%5B%5D=discussions-meetups" target="_blank" rel="noreferrer">Events – Career &amp; Internship Center | University of Washington</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Event: Career Fair 101: How to Prepare for a Fair.</h4>
+        <span class="score">Score 14</span>
+      </div>
+      <p class="snippet">Event: Career Fair 101: How to Prepare for a Fair. Apr 08 Event: Career Fair 101: How to Prepare for a Fair Wednesday, April 8, 2026 12:30pm - 1:20pm Wed, Apr 8 from 12:30pm - 1:20pm Virtual</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>Apr 08</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Virtual</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careers.uw.edu/events/student/?ctag%5B0%5D=workshops&amp;ctag%5B1%5D=employer-alumni-talks-panels&amp;ctag%5B2%5D=job-internship-fairs&amp;ctag%5B%5D=discussions-meetups#content" target="_blank" rel="noreferrer">Events – Career &amp; Internship Center | University of Washington</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Event: Career Fair 101: How to Prepare for a Fair.</h4>
+        <span class="score">Score 14</span>
+      </div>
+      <p class="snippet">Event: Career Fair 101: How to Prepare for a Fair. Apr 08 Event: Career Fair 101: How to Prepare for a Fair Wednesday, April 8, 2026 12:30pm - 1:20pm Wed, Apr 8 from 12:30pm - 1:20pm Virtual</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>Apr 08</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Virtual</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careers.uw.edu/events/student/?ctag%5B0%5D=workshops&amp;ctag%5B1%5D=employer-alumni-talks-panels&amp;ctag%5B2%5D=job-internship-fairs&amp;ctag%5B%5D=discussions-meetups#main-nav-skipper" target="_blank" rel="noreferrer">Events – Career &amp; Internship Center | University of Washington</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Event: Career Fair 101: How to Prepare for a Fair.</h4>
+        <span class="score">Score 14</span>
+      </div>
+      <p class="snippet">Event: Career Fair 101: How to Prepare for a Fair. Apr 08 Event: Career Fair 101: How to Prepare for a Fair Wednesday, April 8, 2026 12:30pm - 1:20pm Wed, Apr 8 from 12:30pm - 1:20pm Virtual</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>Apr 08</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Virtual</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careers.uw.edu/events/student/?ctag%5B0%5D=workshops&amp;ctag%5B1%5D=employer-alumni-talks-panels&amp;ctag%5B2%5D=job-internship-fairs&amp;ctag%5B%5D=discussions-meetups#!" target="_blank" rel="noreferrer">Events – Career &amp; Internship Center | University of Washington</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Event: Career Fair 101: How to Prepare for a Fair.</h4>
+        <span class="score">Score 14</span>
+      </div>
+      <p class="snippet">Event: Career Fair 101: How to Prepare for a Fair. Apr 08 Event: Career Fair 101: How to Prepare for a Fair Wednesday, April 8, 2026 12:30pm - 1:20pm Wed, Apr 8 from 12:30pm - 1:20pm Virtual</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>Apr 08</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Virtual</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careers.uw.edu/events/student/?ctag%5B0%5D=workshops&amp;ctag%5B1%5D=employer-alumni-talks-panels&amp;ctag%5B2%5D=job-internship-fairs&amp;ctag%5B%5D=discussions-meetups#events-list" target="_blank" rel="noreferrer">Events – Career &amp; Internship Center | University of Washington</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employer-page</span></div>
+    </article>
+  
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="amherst-college">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Amherst College</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>4 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Discover Career Paths Career Communities Arts &amp; Communication Business &amp; Finance Education Professions Health Profess...</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Discover Career Paths Career Communities Arts &amp; Communication Business &amp; Finance Education Professions Health Professions Science &amp; Technology Social Impact Professional / Graduate School Advising Law School Advising Pre-Health/Medical School Advising Signature Programs Alumni...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.amherst.edu/campuslife/careers/employers" target="_blank" rel="noreferrer">Employers – Amherst College | Loeb Center for Career Exploration and Planning</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">graduate</span><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Discover Career Paths Career Communities Arts &amp; Communication Business &amp; Finance Education Professions Health Profess...</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Discover Career Paths Career Communities Arts &amp; Communication Business &amp; Finance Education Professions Health Professions Science &amp; Technology Social Impact Professional / Graduate School Advising Law School Advising Pre-Health/Medical School Advising Signature Programs Alumni...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.amherst.edu/campuslife/careers/employers#content" target="_blank" rel="noreferrer">Employers – Amherst College | Loeb Center for Career Exploration and Planning</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">graduate</span><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Discover Career Paths Career Communities Arts &amp; Communication Business &amp; Finance Education Professions Health Profess...</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Discover Career Paths Career Communities Arts &amp; Communication Business &amp; Finance Education Professions Health Professions Science &amp; Technology Social Impact Professional / Graduate School Advising Law School Advising Pre-Health/Medical School Advising Signature Programs Alumni...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.amherst.edu/campuslife/careers/employers#main-nav-skipper" target="_blank" rel="noreferrer">Employers – Amherst College | Loeb Center for Career Exploration and Planning</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">graduate</span><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Discover Career Paths Career Communities Arts &amp; Communication Business &amp; Finance Education Professions Health Profess...</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Discover Career Paths Career Communities Arts &amp; Communication Business &amp; Finance Education Professions Health Professions Science &amp; Technology Social Impact Professional / Graduate School Advising Law School Advising Pre-Health/Medical School Advising Signature Programs Alumni...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://www.amherst.edu/campuslife/careers/employers#!" target="_blank" rel="noreferrer">Employers – Amherst College | Loeb Center for Career Exploration and Planning</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">graduate</span><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://www.amherst.edu/campuslife/careers/events" target="_blank" rel="noreferrer">https://www.amherst.edu/campuslife/careers/events</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="university-of-california-berkeley">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of California, Berkeley</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>3 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Engineering, Technology, &amp; Data Career &amp; Internship Fair</h4>
+        <span class="score">Score 15</span>
+      </div>
+      <p class="snippet">Engineering, Technology, &amp; Data Career &amp; Internship Fair</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.berkeley.edu/employers/recruit-at-cal/recruitment-events-and-career-fairs/past-fair-directories/" target="_blank" rel="noreferrer">Past Fair Directories - Career Engagement</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">engineering</span><span class="tag">internship</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Civil &amp; Environmental Engineering (CEE) Career Fair</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Civil &amp; Environmental Engineering (CEE) Career Fair</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.berkeley.edu/employers/recruit-at-cal/recruitment-events-and-career-fairs/past-fair-directories/" target="_blank" rel="noreferrer">Past Fair Directories - Career Engagement</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">engineering</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Fall Civil &amp; Environmental Engineering (CEE) Career Fair</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Fall Civil &amp; Environmental Engineering (CEE) Career Fair</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.berkeley.edu/employers/recruit-at-cal/recruitment-events-and-career-fairs/past-fair-directories/" target="_blank" rel="noreferrer">Past Fair Directories - Career Engagement</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">engineering</span><span class="tag">employer-page</span></div>
+    </article>
+  
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="university-of-chicago">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of Chicago</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>3 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Meet and network with leading employers across industries at UChicago&#39;s Fall Career Fair on Monday, September 28, 2026!</h4>
+        <span class="score">Score 16</span>
+      </div>
+      <p class="snippet">Recruiting in 2026-2027 academic year? Meet and network with leading employers across industries at UChicago&#39;s Fall Career Fair on Monday, September 28, 2026!</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>September 28, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careeradvancement.uchicago.edu/pre-recruiting-programs/september-programs/career-fair/" target="_blank" rel="noreferrer">Career Fair | Career Advancement</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employers</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Meet and network with leading employers across industries at UChicago&#39;s Fall Career Fair on Monday, September 28, 2026!</h4>
+        <span class="score">Score 16</span>
+      </div>
+      <p class="snippet">Recruiting in 2026-2027 academic year? Meet and network with leading employers across industries at UChicago&#39;s Fall Career Fair on Monday, September 28, 2026!</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>September 28, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careeradvancement.uchicago.edu/student-opportunities/day-long-programs/career-fair/" target="_blank" rel="noreferrer">Career Fair | Career Advancement</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employers</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Thank you to the 90+ employer partners who joined us for the Fall 2025 Career Fair!</h4>
+        <span class="score">Score 14</span>
+      </div>
+      <p class="snippet">Thank you to the 90+ employer partners who joined us for the Fall 2025 Career Fair! Employers connected with 2,000+ UChicago students. We look forward to next year&#39;s annual career fair: join us on Monday, September 28, 2026 at Ida Noyes Hall. Register here! Questions? Contact ...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>September 28, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careeradvancement.uchicago.edu/hire-uchicago/recruit-now/" target="_blank" rel="noreferrer">Recruit Now | Career Advancement</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employers</span></div>
+    </article>
+  
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://careeradvancement.uchicago.edu/employers/" target="_blank" rel="noreferrer">https://careeradvancement.uchicago.edu/employers/</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="california-institute-of-technology">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>California Institute of Technology</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>2 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers are encouraged to post jobs and internships in advance of the career fair.</h4>
+        <span class="score">Score 19</span>
+      </div>
+      <p class="snippet">Employers are encouraged to post jobs and internships in advance of the career fair. Since both schools use different recruiting platforms, we appreciate your efforts to post them on both systems!</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.caltech.edu/employers/career-fairs-for-employers" target="_blank" rel="noreferrer">Career Fairs for Employers - CALE at Caltech</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Employers are encouraged to post jobs and internships in advance of the career fair.</h4>
+        <span class="score">Score 19</span>
+      </div>
+      <p class="snippet">Employers are encouraged to post jobs and internships in advance of the career fair. Since both schools use different recruiting platforms, we appreciate your efforts to post them on both systems!</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.caltech.edu/employers/career-fairs-for-employers#content" target="_blank" rel="noreferrer">Career Fairs for Employers - CALE at Caltech</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">internship</span><span class="tag">employers</span><span class="tag">employer-page</span></div>
+    </article>
+  
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="university-of-arizona">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of Arizona</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>2 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>The STeM fair is one of the most dynamic fairs held during University of Arizona spring Career Days.</h4>
+        <span class="score">Score 12</span>
+      </div>
+      <p class="snippet">The STeM fair is one of the most dynamic fairs held during University of Arizona spring Career Days. Organizations can connect with students in all areas of Science, Technology, Engineering, Photonics, and Math. For the best engagement, we recommend you post your open opportun...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.arizona.edu/channels/career-fairs/" target="_blank" rel="noreferrer">Career Fairs &amp; Networking Events – Center for Career Readiness</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">engineering</span><span class="tag">internship</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>The fall STEM fair is one of the largest and most well-attended fairs held during University of Arizona Career Days.</h4>
+        <span class="score">Score 12</span>
+      </div>
+      <p class="snippet">The fall STEM fair is one of the largest and most well-attended fairs held during University of Arizona Career Days. This fair showcases opportunities from organizations and industries in all areas of Science, Technology, Engineering, Photonics, and Math. For the best engageme...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.arizona.edu/channels/career-fairs/" target="_blank" rel="noreferrer">Career Fairs &amp; Networking Events – Center for Career Readiness</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">engineering</span><span class="tag">internship</span></div>
+    </article>
+  
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="university-of-california-san-diego">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of California, San Diego</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>2 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Price Center West Ballroom Spring 2026 Career Fair</h4>
+        <span class="score">Score 14</span>
+      </div>
+      <p class="snippet">Thursday, April 9, 2026 | 12 p.m. – 4 p.m. | Price Center West Ballroom | Spring 2026 Career Fair</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>April 9, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Ballroom</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.ucsd.edu/employers-recruiters/career-fairs/2025-fall-in-person.html" target="_blank" rel="noreferrer">2026 Spring In-Person Career Fair</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employer-page</span></div>
+    </article>
+  
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Price Center West Ballroom Spring 2026 Career Fair</h4>
+        <span class="score">Score 14</span>
+      </div>
+      <p class="snippet">Thursday, April 9, 2026 | 12 p.m. – 4 p.m. | Price Center West Ballroom | Spring 2026 Career Fair</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>April 9, 2026</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>Ballroom</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.ucsd.edu/employers-recruiters/career-fairs/2025-fall-in-person.html#" target="_blank" rel="noreferrer">2026 Spring In-Person Career Fair</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employer-page</span></div>
+    </article>
+  
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="brigham-young-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Brigham Young University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>1 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>1/22 Civil &amp; Construction Career Fair: 7:00 AM - 8:45 AM1/22 STEM Career Fair: 7:00 AM - 8:45 AM2/5 Career Fair: 7:00...</h4>
+        <span class="score">Score 13</span>
+      </div>
+      <p class="snippet">Toggle ItemWhen do I need to arrive to set up my booth for the Fairs? 1/22 Civil &amp; Construction Career Fair: 7:00 AM - 8:45 AM1/22 STEM Career Fair: 7:00 AM - 8:45 AM2/5 Career Fair: 7:00 AM - 8:45 AM2/20 School of Communications Fair: 8:00 AM - 9:45 AM2/24 Education Fair: 1:0...</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>1/22</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://careers.byu.edu/employers/fairs-and-events/faq" target="_blank" rel="noreferrer">Employer FAQ</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">employer-page</span></div>
+    </article>
+  
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://careers.byu.edu/employers" target="_blank" rel="noreferrer">https://careers.byu.edu/employers</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="university-of-florida">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of Florida</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>1 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        
+    <article class="result-card">
+      <div class="result-topline">
+        <h4>Agricultural &amp; Biological Engineering Fair</h4>
+        <span class="score">Score 10</span>
+      </div>
+      <p class="snippet">Agricultural &amp; Biological Engineering Fair</p>
+      <dl class="meta-grid">
+        <div class="meta-cell">
+          <dt>Date</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell">
+          <dt>Location</dt>
+          <dd>N/A</dd>
+        </div>
+        <div class="meta-cell full-width">
+          <dt>Source</dt>
+          <dd><a href="https://career.ufl.edu/events-and-programs/career-fairs/" target="_blank" rel="noreferrer">Career Fairs - Career Connections Center</a></dd>
+        </div>
+      </dl>
+      <div class="keyword-row"><span class="tag">engineering</span></div>
+    </article>
+  
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="arizona-state-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Arizona State University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>4 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://career.asu.edu/employers/" target="_blank" rel="noreferrer">https://career.asu.edu/employers/</a> <span>HTTP 404</span></li><li><a href="https://career.asu.edu/channels/events/" target="_blank" rel="noreferrer">https://career.asu.edu/channels/events/</a> <span>HTTP 404</span></li><li><a href="https://career.asu.edu/cdn-cgi/l/email-protection#43202231262631302631352a202630032230366d262736" target="_blank" rel="noreferrer">https://career.asu.edu/cdn-cgi/l/email-protection#43202231262631302631352a202630032230366d262736</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="bryn-mawr-college">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Bryn Mawr College</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://www.brynmawr.edu/inside/offices-services/career-civic-engagement-center/employers" target="_blank" rel="noreferrer">https://www.brynmawr.edu/inside/offices-services/career-civic-engagement-center/employers</a> <span>HTTP 404</span></li><li><a href="https://www.brynmawr.edu/inside/offices-services/career-civic-engagement-center/events" target="_blank" rel="noreferrer">https://www.brynmawr.edu/inside/offices-services/career-civic-engagement-center/events</a> <span>HTTP 404</span></li><li><a href="https://www.brynmawr.edu/career-civic/recruiting-bryn-mawr-students-and-graduates/employer-recruiting-policies" target="_blank" rel="noreferrer">https://www.brynmawr.edu/career-civic/recruiting-bryn-mawr-students-and-graduates/employer-recruiting-policies</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="carnegie-mellon-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Carnegie Mellon University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://www.cmu.edu/career/employers-and-recruiters/" target="_blank" rel="noreferrer">https://www.cmu.edu/career/employers-and-recruiters/</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="cheyney-university-of-pennsylvania">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Cheyney University of Pennsylvania</h3>
+        </div>
+        <div class="stats-inline">
+          <span>3 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://www.cheyney.edu/student-life/career-services" target="_blank" rel="noreferrer">https://www.cheyney.edu/student-life/career-services</a> <span>HTTP 404</span></li><li><a href="https://www.cheyney.edu/student-life/career-services/career-events" target="_blank" rel="noreferrer">https://www.cheyney.edu/student-life/career-services/career-events</a> <span>HTTP 404</span></li><li><a href="https://www.cheyney.edu/student-life/career-services/employer-services" target="_blank" rel="noreferrer">https://www.cheyney.edu/student-life/career-services/employer-services</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="chicago-state-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Chicago State University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://www.csu.edu/careerdevelopment/employers.htm" target="_blank" rel="noreferrer">https://www.csu.edu/careerdevelopment/employers.htm</a> <span>HTTP 404</span></li><li><a href="https://www.csu.edu/careerdevelopment/students/events.htm" target="_blank" rel="noreferrer">https://www.csu.edu/careerdevelopment/students/events.htm</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="colorado-school-of-mines">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Colorado School of Mines</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://www.mines.edu/careers/employers/jerry.mason@mines.edu%E2%80%9D" target="_blank" rel="noreferrer">https://www.mines.edu/careers/employers/jerry.mason@mines.edu%E2%80%9D</a> <span>HTTP 404</span></li><li><a href="https://www.mines.edu/careers/employers/careercenter@mines.edu%E2%80%9D" target="_blank" rel="noreferrer">https://www.mines.edu/careers/employers/careercenter@mines.edu%E2%80%9D</a> <span>HTTP 404</span></li><li><a href="https://www.mines.edu/careers/career-fairs/" target="_blank" rel="noreferrer">https://www.mines.edu/careers/career-fairs/</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="florida-a-m-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Florida A&amp;M University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>3 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://www.famu.edu/students/career-and-professional-development-center/index.php" target="_blank" rel="noreferrer">https://www.famu.edu/students/career-and-professional-development-center/index.php</a> <span>HTTP 404</span></li><li><a href="https://www.famu.edu/students/career-and-professional-development-center/students/career-fairs.php" target="_blank" rel="noreferrer">https://www.famu.edu/students/career-and-professional-development-center/students/career-fairs.php</a> <span>HTTP 404</span></li><li><a href="https://www.famu.edu/students/career-and-professional-development-center/employers/index.php" target="_blank" rel="noreferrer">https://www.famu.edu/students/career-and-professional-development-center/employers/index.php</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="gonzaga-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Gonzaga University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>3 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://www.gonzaga.edu/student-life/career-professional-development" target="_blank" rel="noreferrer">https://www.gonzaga.edu/student-life/career-professional-development</a> <span>HTTP 404</span></li><li><a href="https://www.gonzaga.edu/student-life/career-professional-development/events" target="_blank" rel="noreferrer">https://www.gonzaga.edu/student-life/career-professional-development/events</a> <span>HTTP 404</span></li><li><a href="https://www.gonzaga.edu/student-life/career-professional-development/employers" target="_blank" rel="noreferrer">https://www.gonzaga.edu/student-life/career-professional-development/employers</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="lehigh-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Lehigh University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://careercenter.lehigh.edu/employers" target="_blank" rel="noreferrer">https://careercenter.lehigh.edu/employers</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="mount-holyoke-college">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Mount Holyoke College</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://www.mtholyoke.edu/directory/departments-offices-centers/career-development-center/employers" target="_blank" rel="noreferrer">https://www.mtholyoke.edu/directory/departments-offices-centers/career-development-center/employers</a> <span>HTTP 404</span></li><li><a href="https://www.mtholyoke.edu/directory/departments-offices-centers/career-development-center/events" target="_blank" rel="noreferrer">https://www.mtholyoke.edu/directory/departments-offices-centers/career-development-center/events</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="northeastern-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Northeastern University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://careers.northeastern.edu/employer-engagement-and-career-design/" target="_blank" rel="noreferrer">https://careers.northeastern.edu/employer-engagement-and-career-design/</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="northwestern-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Northwestern University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="pennsylvania-state-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Pennsylvania State University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>3 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://career.psu.edu/" target="_blank" rel="noreferrer">https://career.psu.edu/</a> <span>fetch failed</span></li><li><a href="https://career.psu.edu/channels/events/" target="_blank" rel="noreferrer">https://career.psu.edu/channels/events/</a> <span>fetch failed</span></li><li><a href="https://career.psu.edu/employers/" target="_blank" rel="noreferrer">https://career.psu.edu/employers/</a> <span>fetch failed</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="seattle-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Seattle University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>3 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://www.seattleu.edu/life-at-seattle-u/career-engagement/" target="_blank" rel="noreferrer">https://www.seattleu.edu/life-at-seattle-u/career-engagement/</a> <span>HTTP 404</span></li><li><a href="https://www.seattleu.edu/life-at-seattle-u/career-engagement/events/" target="_blank" rel="noreferrer">https://www.seattleu.edu/life-at-seattle-u/career-engagement/events/</a> <span>HTTP 404</span></li><li><a href="https://www.seattleu.edu/life-at-seattle-u/career-engagement/employers/" target="_blank" rel="noreferrer">https://www.seattleu.edu/life-at-seattle-u/career-engagement/employers/</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="smith-college">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Smith College</h3>
+        </div>
+        <div class="stats-inline">
+          <span>3 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://www.smith.edu/academics/career-development" target="_blank" rel="noreferrer">https://www.smith.edu/academics/career-development</a> <span>HTTP 404</span></li><li><a href="https://www.smith.edu/academics/career-development/events" target="_blank" rel="noreferrer">https://www.smith.edu/academics/career-development/events</a> <span>HTTP 404</span></li><li><a href="https://www.smith.edu/academics/career-development/employers" target="_blank" rel="noreferrer">https://www.smith.edu/academics/career-development/employers</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="stanford-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Stanford University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>3 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://careereducation.stanford.edu/" target="_blank" rel="noreferrer">https://careereducation.stanford.edu/</a> <span>fetch failed</span></li><li><a href="https://careereducation.stanford.edu/events" target="_blank" rel="noreferrer">https://careereducation.stanford.edu/events</a> <span>fetch failed</span></li><li><a href="https://careereducation.stanford.edu/employers" target="_blank" rel="noreferrer">https://careereducation.stanford.edu/employers</a> <span>fetch failed</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="temple-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Temple University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="tufts-university">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Tufts University</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://careers.tufts.edu/employers/" target="_blank" rel="noreferrer">https://careers.tufts.edu/employers/</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="university-of-california-davis">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of California, Davis</h3>
+        </div>
+        <div class="stats-inline">
+          <span>3 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://icc.ucdavis.edu/" target="_blank" rel="noreferrer">https://icc.ucdavis.edu/</a> <span>HTTP 403</span></li><li><a href="https://icc.ucdavis.edu/events" target="_blank" rel="noreferrer">https://icc.ucdavis.edu/events</a> <span>HTTP 403</span></li><li><a href="https://icc.ucdavis.edu/employers" target="_blank" rel="noreferrer">https://icc.ucdavis.edu/employers</a> <span>HTTP 403</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="university-of-california-los-angeles">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of California, Los Angeles</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://career.ucla.edu/employers" target="_blank" rel="noreferrer">https://career.ucla.edu/employers</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="university-of-california-san-francisco">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of California, San Francisco</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="university-of-california-santa-cruz">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of California, Santa Cruz</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://careers.ucsc.edu/employers/index.html" target="_blank" rel="noreferrer">https://careers.ucsc.edu/employers/index.html</a> <span>HTTP 404</span></li><li><a href="https://careers.ucsc.edu/student/events/index.html" target="_blank" rel="noreferrer">https://careers.ucsc.edu/student/events/index.html</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="university-of-illinois-urbana-champaign">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of Illinois Urbana-Champaign</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://www.careercenter.illinois.edu/employers" target="_blank" rel="noreferrer">https://www.careercenter.illinois.edu/employers</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="university-of-south-florida">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of South Florida</h3>
+        </div>
+        <div class="stats-inline">
+          <span>5 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://www.usf.edu/career-services/employers/index.aspx" target="_blank" rel="noreferrer">https://www.usf.edu/career-services/employers/index.aspx</a> <span>HTTP 404</span></li><li><a href="https://www.usf.edu/career-services/students/events-career-fairs/index.aspx" target="_blank" rel="noreferrer">https://www.usf.edu/career-services/students/events-career-fairs/index.aspx</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+    <section class="university-section" id="university-of-texas-at-austin">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of Texas at Austin</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="university-of-wyoming">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>University of Wyoming</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+    </section>
+  
+    <section class="university-section" id="wellesley-college">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">University</p>
+          <h3>Wellesley College</h3>
+        </div>
+        <div class="stats-inline">
+          <span>6 pages visited</span>
+          <span>0 matches</span>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="empty-state">No likely employment fairs were detected from the pages explored for this school.</div>
+      </div>
+      
+      <div class="errors">
+        <h4>Fetch Issues</h4>
+        <ul>
+          <li><a href="https://www.wellesley.edu/careereducation/employers" target="_blank" rel="noreferrer">https://www.wellesley.edu/careereducation/employers</a> <span>HTTP 404</span></li>
+        </ul>
+      </div>
+    
+    </section>
+  
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
